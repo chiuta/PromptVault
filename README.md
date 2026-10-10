@@ -39,6 +39,10 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 - Service worker-ul generat local interceptează cererile GET către aceeași origine și le ține în cache, pentru reutilizare ulterioară; nu contactează alte gazde.
 - Aplicația nu conține analytics sau telemetrie.
 
+## Limitări și disclaimer
+
+Prompturile sunt șabloane, nu sfaturi. Categoriile de sănătate, sănătate mintală, medicină, drept, contabilitate/fiscalitate, investiții/trading și asigurări sunt strict informative și nu înlocuiesc un specialist; rezultatele generate de AI trebuie verificate. O notă în acest sens este afișată în subsolul barei laterale (în engleză).
+
 ## Rulare locală / offline
 
 Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele și limbile sunt în fișier, deci funcționează fără internet. Funcția PWA/service worker necesită servire prin HTTPS (nu funcționează la deschiderea ca fișier local); linkurile externe necesită internet.
@@ -48,6 +52,10 @@ Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele ș
 CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE.
 
 Notă: textele „About” și „Terms” din interfața aplicației menționează încă „Prompts: CC BY 4.0. Code: © 2026 Alexio”; această formulare urmează să fie aliniată cu declarația CC0 a repository-ului.
+
+## Audit
+
+Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența contradictorie din pagină rămâne deschisă (vezi mai sus).
 
 ## Autor
 

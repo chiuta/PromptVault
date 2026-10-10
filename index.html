@@ -31,7 +31,7 @@
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0e0e11" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'self'; frame-ancestors 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'self';">
 <link rel="canonical" href="https://alexio.tf/PromptVault/">
 <link rel="alternate" hreflang="x-default" href="https://alexio.tf/PromptVault/">
 <link rel="alternate" hreflang="en" href="https://alexio.tf/PromptVault/?lang=en">
@@ -82,15 +82,15 @@
 :root{
   --bg:#0e0e11;--sf:#17171c;--sf2:#1f1f26;--sf3:#252530;
   --bd:#2a2a35;--bd2:#363645;
-  --tx:#e8e8f0;--mu:#6b6b82;--hi:#4a4a5e;
-  --ac:#7c6af7;--ac2:#4fd1c5;--ab:#7c6af715;
+  --tx:#e8e8f0;--mu:#8686a0;--hi:#8a8aa4;
+  --ac:#7c6af7;--act:#9a8cff;--ac2:#4fd1c5;--ab:#7c6af715;
   --font:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --mono:ui-monospace,"SF Mono","Cascadia Code","Fira Code",Consolas,monospace;
   --r:8px;--rs:5px;--focus:2px solid #4fd1c5;--focus-off:2px
 }
-[data-theme=light]{--bg:#f2f2f7;--sf:#fff;--sf2:#f7f7fc;--sf3:#eeeef5;--bd:#e0e0ea;--bd2:#d0d0de;--tx:#18181f;--mu:#7777a0;--hi:#b0b0c8;--ab:#7c6af710}
+[data-theme=light]{--bg:#f2f2f7;--sf:#fff;--sf2:#f7f7fc;--sf3:#eeeef5;--bd:#e0e0ea;--bd2:#d0d0de;--tx:#18181f;--mu:#636390;--hi:#6c6c8c;--ab:#7c6af710;--ac:#5b48e0;--act:#5b48e0}
 @media (prefers-color-scheme: light){
-  :root:not([data-theme=dark]):not([data-theme=light]){--bg:#f2f2f7;--sf:#fff;--sf2:#f7f7fc;--sf3:#eeeef5;--bd:#e0e0ea;--bd2:#d0d0de;--tx:#18181f;--mu:#7777a0;--hi:#b0b0c8;--ab:#7c6af710}
+  :root:not([data-theme=dark]):not([data-theme=light]){--bg:#f2f2f7;--sf:#fff;--sf2:#f7f7fc;--sf3:#eeeef5;--bd:#e0e0ea;--bd2:#d0d0de;--tx:#18181f;--mu:#636390;--hi:#6c6c8c;--ab:#7c6af710;--ac:#5b48e0;--act:#5b48e0}
 }
 html{-webkit-text-size-adjust:100%}
 body{background:var(--bg);color:var(--tx);font-family:var(--font);display:flex;height:100vh;height:100dvh;overflow:hidden;font-size:14px}
@@ -130,14 +130,14 @@ aside{width:272px;flex-shrink:0;background:var(--sf);border-right:1px solid var(
 .ni{display:flex;align-items:center;padding:8px 9px 8px 32px;cursor:pointer;border-radius:var(--rs);margin:1px 5px;font-size:12px;color:var(--mu);transition:all .1s;background:none;border:none;font-family:var(--font);width:calc(100% - 10px);text-align:left;min-height:32px}
 [dir=rtl] .ni{padding:8px 32px 8px 9px;text-align:right}
 .ni:hover{background:var(--sf2);color:var(--tx)}
-.ni[aria-current=true]{background:var(--ab);color:var(--ac);font-weight:500}
+.ni[aria-current=true]{background:var(--ab);color:var(--act);font-weight:500}
 .nic{margin-left:auto;font-size:9.5px;background:var(--sf2);color:var(--hi);padding:1px 5px;border-radius:6px;flex-shrink:0}
 [dir=rtl] .nic{margin-left:0;margin-right:auto}
-.ni[aria-current=true] .nic{background:#7c6af722;color:var(--ac)}
+.ni[aria-current=true] .nic{background:#7c6af722;color:var(--act)}
 .na{display:flex;align-items:center;gap:7px;padding:9px;cursor:pointer;border-radius:var(--rs);margin:5px 5px 3px;font-size:12.5px;font-weight:600;transition:all .1s;background:none;border:none;color:var(--tx);font-family:var(--font);width:calc(100% - 10px);text-align:left;min-height:36px}
 [dir=rtl] .na{text-align:right}
 .na:hover{background:var(--sf2)}
-.na[aria-current=true]{background:var(--ab);color:var(--ac)}
+.na[aria-current=true]{background:var(--ab);color:var(--act)}
 .nac{margin-left:auto;font-size:9.5px;background:var(--sf2);color:var(--mu);padding:1px 5px;border-radius:7px;flex-shrink:0}
 [dir=rtl] .nac{margin-left:0;margin-right:auto}
 .foot{padding:8px 11px;border-top:1px solid var(--bd);flex-shrink:0;display:flex;flex-direction:column;gap:6px}
@@ -178,6 +178,8 @@ main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
 .card:hover{border-color:var(--ac);transform:translateY(-1px)}
 .ct{display:flex;align-items:flex-start;justify-content:space-between;gap:7px}
 .ctt{font-size:12.5px;font-weight:600;line-height:1.4}
+[data-theme=light] .cb{color:var(--tx)!important}
+@media (prefers-color-scheme: light){:root:not([data-theme=dark]):not([data-theme=light]) .cb{color:var(--tx)!important}}
 .cb{font-size:9px;font-weight:600;padding:2px 6px;border-radius:4px;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap;flex-shrink:0}
 .cp{font-size:11px;color:var(--mu);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .cf{display:flex;align-items:center;justify-content:space-between;gap:5px}
@@ -208,11 +210,13 @@ main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
 .mb::-webkit-scrollbar-thumb,.lmb::-webkit-scrollbar-thumb{background:var(--bd)}
 .pt{background:var(--sf2);border:1px solid var(--bd);border-radius:var(--r);padding:14px;font-family:var(--mono);font-size:11.5px;line-height:1.8;color:var(--tx);white-space:pre-wrap;word-break:break-word}
 .pt mark{background:#7c6af730;color:#a58af9;border-radius:2px;padding:0 2px}
+[data-theme=light] .pt mark{color:#4a38c8}
+@media (prefers-color-scheme: light){:root:not([data-theme=dark]):not([data-theme=light]) .pt mark{color:#4a38c8}}
 .mf,.lmf{padding:11px 18px;border-top:1px solid var(--bd);display:flex;gap:7px;justify-content:flex-end}
 .lmf{padding:11px 20px}
 .btn{padding:8px 16px;border-radius:var(--rs);font-size:12px;cursor:pointer;font-family:var(--font);font-weight:500;transition:all .15s;min-height:34px}
 .bg{background:transparent;border:1px solid var(--bd2);color:var(--mu)}.bg:hover{border-color:var(--tx);color:var(--tx)}
-.bp{background:var(--ac);border:1px solid var(--ac);color:#fff}.bp:hover{opacity:.85}
+.bp{background:#6552e8;border:1px solid #6552e8;color:#fff}.bp:hover{opacity:.85}
 .bok{background:#065f46;border:1px solid #34d399;color:#34d399}
 .lmb h3{font-size:13px;font-weight:700;margin:16px 0 6px;color:var(--ac)}
 .lmb h3:first-child{margin-top:0}
@@ -220,7 +224,7 @@ main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
 .lmb ul{margin:6px 0 10px 18px;color:var(--mu)}
 [dir=rtl] .lmb ul{margin:6px 18px 10px 0}
 .lmb li{margin-bottom:4px}
-.lmb a{color:var(--ac);text-decoration:none}.lmb a:hover{text-decoration:underline}
+.lmb a{color:var(--ac);text-decoration:underline}.lmb a:hover{text-decoration:none}
 .lmb .upd{font-size:10.5px;color:var(--hi);margin-bottom:16px}
 .lmb code{font-family:var(--mono);font-size:11.5px;background:var(--sf2);padding:1px 4px;border-radius:3px}
 
@@ -319,6 +323,7 @@ main{flex:1;display:flex;flex-direction:column;overflow:hidden;min-width:0}
       <span class="ll-sep" aria-hidden="true">·</span>
       <button class="ll" type="button" onclick="clearPrefs()" data-i18n="clear_prefs">Reset</button>
     </div>
+    <p lang="en" style="margin:8px 0 0;font-size:10px;line-height:1.4;color:var(--mu)">Prompts are templates, not advice. Health, legal, financial and investment prompts are informational only and do not replace a qualified professional. Check AI output before using it.</p>
   </div>
 </aside>
 
@@ -555,7 +560,7 @@ function crd(p){
     `<div class="ct"><div class="ctt">${esc(p.t)}</div>${bdg(p.s)}</div>`+
     `<div class="cp">${esc(preview)}</div>`+
     `<div class="cf"><div class="ctags">${p.tags.slice(0,3).map(tg=>`<span class="tg">${esc(tg)}</span>`).join('')}</div>`+
-    `<span class="cpb" role="button" tabindex="0" onclick="event.stopPropagation();cpCard(this.closest('.card').dataset.k,this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();cpCard(this.closest('.card').dataset.k,this);}">${esc(t('copy_card'))}</span></div>`+
+    `<span class="cpb" aria-hidden="true" onclick="event.stopPropagation();cpCard(this.closest('.card').dataset.k,this)">${esc(t('copy_card'))}</span></div>`+
   `</button>`;
 }
 
@@ -896,7 +901,7 @@ function installPWA(){
 @media (max-width:560px){#tf-donate .tf-lbl{display:none}}
 @media print{#tf-donate{display:none}}
 </style>
-<input type="checkbox" id="tf-donate-cb" class="tf-cb" aria-hidden="true">
+<input type="checkbox" id="tf-donate-cb" class="tf-cb" aria-hidden="true" tabindex="-1">
 <div class="tf-panel">
 <span class="tf-lbl">Sprijină:</span>
 <a class="tf-b tf-pat" href="https://www.patreon.com/c/alexio_tf" target="_blank" rel="noopener" aria-label="Sprijină pe Patreon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="15.4" cy="9.4" r="6.6" fill="currentColor"/><rect x="2.4" y="2.4" width="3.7" height="19.2" fill="currentColor"/></svg>Patreon</a>
