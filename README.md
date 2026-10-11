@@ -51,11 +51,11 @@ Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele ș
 
 CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE.
 
-Notă: textele „About” și „Terms” din interfața aplicației menționează încă „Prompts: CC BY 4.0. Code: © 2026 Alexio”; această formulare urmează să fie aliniată cu declarația CC0 a repository-ului.
+Textele „About” și „Terms” din interfață (toate cele 15 limbi) indică acum aceeași licență, CC0 1.0 (unificat la audit, 2026-10-11).
 
 ## Audit
 
-Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența contradictorie din pagină rămâne deschisă (vezi mai sus).
+Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența din pagină a fost unificată la CC0 1.0 în toate limbile (2026-10-11); nota de subsol cu disclaimer este acum tradusă în cele 15 limbi.
 
 ## Autor
 
