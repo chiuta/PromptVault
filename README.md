@@ -1,5 +1,7 @@
 # PromptVault
 
+**Ultima actualizare:** 11 octombrie 2026
+
 Bibliotecă gratuită de prompturi AI, într-un singur fișier HTML, cu căutare, categorii și interfață în 15 limbi.
 
 **Live:** https://chiuta.github.io/PromptVault/
@@ -64,3 +66,11 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 ## English summary
 
 PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width and language in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed CC0 1.0.
+
+## Istoric / Changelog
+
+### 11 octombrie 2026
+- Cele 23 de atribute `onclick`/`onchange` din HTML au fost înlocuite cu un ascultător delegat (`data-act`); comportamentul este neschimbat (verificat: meniu, căutare, fereastră prompt, copiere, limbă, teme, ferestre legale).
+- Contoarele din bara laterală (categorii și subcategorii) urmăresc acum căutarea activă, deci coincid cu rezultatele afișate; fără căutare rămân totalurile (502 prompturi, 62 categorii, 162 subcategorii).
+- În limbile diferite de engleză apare o notă traducată: interfața e tradusă, dar textele prompturilor rămân în engleză (traducerea celor 502 prompturi în 14 limbi nu a fost făcută).
+- `aside` pentru pastila de donații (axe: 0 încălcări).
