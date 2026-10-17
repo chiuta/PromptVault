@@ -40,7 +40,7 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 ## Confidențialitate și rețea
 
 - **Stocare locală (localStorage):** patru chei, `pv_theme` (temă), `pv_sw` (lățimea panoului lateral), `pv_lang` (limbă) și `pv_fav` (lista titlurilor favorite). Nu se folosesc cookie-uri. Datele nu părăsesc dispozitivul.
-- **Rețea:** în codul aplicației nu există cereri către servere terțe, nici scripturi, fonturi sau imagini încărcate din exterior. Linkurile din aplicație (Patreon, Buy Me a Coffee, alexio.tf, GitHub) se deschid doar dacă le apeși.
+- **Rețea:** în codul aplicației nu există cereri către servere terțe, nici scripturi, fonturi sau imagini încărcate din exterior. Linkurile din aplicație (Buy Me a Coffee, alexio.tf, GitHub) se deschid doar dacă le apeși.
 - Service worker-ul generat local interceptează cererile GET către aceeași origine și le ține în cache, pentru reutilizare ulterioară; nu contactează alte gazde.
 - Aplicația nu conține analytics sau telemetrie.
 
