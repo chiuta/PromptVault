@@ -14,8 +14,8 @@
   "storageKeys": [
     "__pv_t"
   ],
-  "sizeBytes": 821820,
-  "sha256": "4d00b70db7f4c26f795f7f36f6313c609b53efe9a5ae48cd59446196380df464",
+  "sizeBytes": 821452,
+  "sha256": "a34231bc2d639b7900db1265c1ea2bc4acacec9921bdba3661d08570646ae6b4",
   "csp": {
     "present": true,
     "directives": {
