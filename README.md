@@ -54,13 +54,13 @@ Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele ș
 
 ## Licență
 
-CC0 1.0 Universal (domeniu public) — vezi fișierul LICENSE.
+MIT — vezi fișierul LICENSE.
 
-Textele „About” și „Terms” din interfață (toate cele 15 limbi) indică acum aceeași licență, CC0 1.0 (unificat la audit, 2026-10-11).
+Textele „About” și „Terms” din interfață (toate cele 15 limbi) indică acum aceeași licență, MIT.
 
 ## Audit
 
-Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența din pagină a fost unificată la CC0 1.0 în toate limbile (2026-10-11); nota de subsol cu disclaimer este acum tradusă în cele 15 limbi.
+Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența din pagină a fost unificată în toate limbile (2026-10-11; în prezent MIT); nota de subsol cu disclaimer este acum tradusă în cele 15 limbi.
 
 ## Autor
 
@@ -68,7 +68,7 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
 ## English summary
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed CC0 1.0.
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
 ## Istoric / Changelog
 
