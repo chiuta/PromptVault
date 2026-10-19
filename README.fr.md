@@ -1,0 +1,92 @@
+# PromptVault
+
+[English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
+
+**Version :** 1.1.0 · **Dernière mise à jour :** 2026-10-14
+
+Une bibliothèque gratuite de prompts d'IA, dans un seul fichier HTML, avec recherche, catégories et interface en 15 langues.
+
+**Application en ligne :** https://chiuta.github.io/PromptVault/
+
+![Capture d'écran](screenshot.png)
+
+## De quoi s'agit-il
+
+PromptVault est une bibliothèque de prompts pour les outils d'intelligence artificielle, organisée par catégories (écriture, marketing, vidéo et audio, design, programmation, etc.). Selon la page « About » de l'application, elle contient plus de 500 prompts répartis en 62 catégories. Le tout tient dans un seul fichier `index.html`, sans compte et sans paiement ; le prompt se copie en un clic et se colle dans l'outil d'IA de votre choix.
+
+## Fonctionnalités
+
+- Recherche dans les prompts, avec le raccourci **Ctrl+K** (ou Cmd+K) pour placer le curseur dans le champ de recherche.
+- Navigation par catégories et sous-catégories, dans un panneau latéral (sur les écrans étroits, il s'ouvre avec le bouton ☰).
+- Tri : « Default », « A→Z », « Z→A ».
+- **Remplissage des [PLACEHOLDER]** dans la fenêtre du prompt : les 502 prompts contiennent tous des emplacements du type `[TOPIC]` ; le panneau « Compléter les blancs » génère un champ pour chacun, l'aperçu se met à jour en direct, et « Copy prompt » copie le texte complété (les valeurs ne sont enregistrées nulle part).
+- **Réponse dans la langue de l'interface** (langues ≠ anglais) : option dans la fenêtre du prompt qui ajoute à la fin la phrase « Please write your answer in <langue>. » ; le prompt lui-même reste en anglais. Les nouveaux textes sont traduits dans les 15 langues.
+- Bouton **Copy prompt** (Copier le prompt) dans la fenêtre de détail de chaque prompt, ainsi qu'un bouton **Copy** sur la carte.
+- Thème clair / sombre (bouton ☀️ Light / 🌙 Dark) ; au premier lancement, la préférence du système est suivie.
+- 15 langues d'interface : anglais, roumain, espagnol, français, allemand, italien, portugais, néerlandais, polonais, russe, arabe, chinois, japonais, coréen, turc.
+- Panneau latéral redimensionnable par glissement ou avec les flèches gauche/droite, Début et Fin lorsque la poignée a le focus.
+- **Favoris** : le bouton ☆ de la carte ou « ☆ Ajouter aux favoris » dans la fenêtre du prompt marque un prompt ; l'élément « ★ Favoris » du panneau latéral (avec compteur) les liste. La liste est conservée uniquement dans ce navigateur (`pv_fav`), en 15 langues.
+- Fenêtres d'information : Privacy, Terms, Storage, About ; bouton **Reset** pour effacer les préférences enregistrées (et les favoris, après confirmation).
+- Tente de s'enregistrer comme PWA (manifeste et service worker générés par le code, uniquement sur connexions sécurisées / HTTPS).
+
+## Mode d'emploi
+
+1. Ouvrez la page (ou le fichier `index.html` en local).
+2. Choisissez la langue dans la liste « Language » de la barre latérale.
+3. Choisissez une catégorie dans la barre latérale ou appuyez sur **Ctrl+K** et saisissez un mot-clé dans le champ de recherche.
+4. Si vous le souhaitez, changez l'ordre avec la liste « Sort ».
+5. Cliquez sur une carte pour ouvrir le prompt complet ; appuyez sur **Copy prompt** pour le copier dans le presse-papiers. Si le navigateur bloque la copie, l'application vous demande de sélectionner et de copier manuellement.
+6. Fermez la fenêtre avec **Close**, avec ✕ ou avec **Échap**.
+7. Pour effacer les réglages enregistrés (thème, largeur du panneau, langue, favoris), appuyez sur **Reset** dans le pied de page.
+
+## Confidentialité et réseau
+
+- **Stockage local (localStorage) :** quatre clés, `pv_theme` (thème), `pv_sw` (largeur du panneau latéral), `pv_lang` (langue) et `pv_fav` (liste des titres favoris). Aucun cookie n'est utilisé. Les données ne quittent pas l'appareil.
+- **Réseau :** le code de l'application ne contient aucune requête vers des serveurs tiers, ni scripts, polices ou images chargés depuis l'extérieur. Les liens de l'application (Buy Me a Coffee, alexio.tf, GitHub) ne s'ouvrent que si vous cliquez dessus.
+- Le service worker généré localement intercepte les requêtes GET vers la même origine et les met en cache pour une réutilisation ultérieure ; il ne contacte pas d'autres hôtes.
+- L'application ne contient ni analytique ni télémétrie.
+
+## Limites et avertissement
+
+Les prompts sont des modèles, pas des conseils. Les catégories santé, santé mentale, médecine, droit, comptabilité/fiscalité, investissement/trading et assurances sont strictement informatives et ne remplacent pas un spécialiste ; les résultats générés par l'IA doivent être vérifiés. Une note en ce sens figure dans le pied de la barre latérale (en anglais).
+
+## Exécution locale / hors ligne
+
+Téléchargez `index.html` et ouvrez-le dans un navigateur. Tous les prompts, textes et langues sont dans le fichier, donc il fonctionne sans Internet. La fonction PWA/service worker nécessite un service via HTTPS (elle ne fonctionne pas à l'ouverture comme fichier local) ; les liens externes nécessitent Internet.
+
+## Licence
+
+MIT — voir le fichier LICENSE.
+
+Les textes « About » et « Terms » de l'interface (dans les 15 langues) indiquent désormais la même licence, MIT.
+
+## Audit
+
+Audit : 2026-10-10 — les affirmations du README sur le réseau et le stockage correspondent au code (le seul `fetch` se trouve dans le service worker généré localement, pour la même origine ; CSP `connect-src 'none'`). La licence affichée dans la page a été unifiée dans toutes les langues (2026-10-11 ; actuellement MIT) ; la note de pied de page avec l'avertissement est maintenant traduite dans les 15 langues.
+
+## Auteur
+
+Alexio — Alexandru-Ionuț Chiuță. Contact : alexio@trom.tf
+
+## English summary
+
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+
+## Historique / Changelog
+
+### 1.1.0 — 2026-10-14
+- Sauvegarde et étiquetage des données (fff-kit).
+
+### 12 octobre 2026 (v1.0.0)
+- 1.0.0 — 2026-10-12 : la version et la date de la dernière mise à jour sont affichées dans l'application
+
+### 11 octobre 2026
+- Favoris (☆/★ sur la carte et dans la fenêtre du prompt, élément « ★ Favoris » avec compteur dans le panneau latéral, persistance dans `localStorage` sous `pv_fav`, 15 langues) ; la politique « Storage » de l'application liste désormais aussi `pv_fav` (au lieu de « trois préférences »).
+- Corrigé : le style global `aside` de l'application s'appliquait aussi à la pastille de don (`#tf-donate`), d'où le rectangle blanc dans le coin sur la capture et le bouton ✕ coupé ; sur mobile, la pastille pouvait être repoussée hors de l'écran. La règle de la pastille réinitialise désormais les propriétés héritées.
+- `screenshot.png` actualisée (1280×800, interface en roumain).
+- Fenêtre du prompt : remplissage interactif des `[PLACEHOLDER]` (copie avec les valeurs saisies) et option « répondre dans la langue de l'interface », dans 15 langues ; testé dans Chromium (aperçu, presse-papiers, 360 px sans défilement horizontal).
+- CSP : `script-src` sur hachage SHA-256, sans `'unsafe-inline'`.
+- Les 23 attributs `onclick`/`onchange` du HTML ont été remplacés par un écouteur délégué (`data-act`) ; comportement inchangé (vérifié : menu, recherche, fenêtre du prompt, copie, langue, thèmes, fenêtres légales).
+- Les compteurs de la barre latérale (catégories et sous-catégories) suivent désormais la recherche active, et correspondent donc aux résultats affichés ; sans recherche, ils restent les totaux (502 prompts, 62 catégories, 162 sous-catégories).
+- Dans les langues autres que l'anglais, une note traduite apparaît : l'interface est traduite, mais les textes des prompts restent en anglais (la traduction des 502 prompts en 14 langues n'a pas été faite).
+- `aside` pour la pastille de don (axe : 0 violation).

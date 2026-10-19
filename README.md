@@ -1,68 +1,70 @@
 # PromptVault
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
+**English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Bibliotecă gratuită de prompturi AI, într-un singur fișier HTML, cu căutare, categorii și interfață în 15 limbi.
+**Version:** 1.1.0 · **Last updated:** 2026-10-14
 
-**Live:** https://chiuta.github.io/PromptVault/
+A free library of AI prompts, in a single HTML file, with search, categories and an interface in 15 languages.
 
-![Captura de ecran](screenshot.png)
+**Live app:** https://chiuta.github.io/PromptVault/
 
-## Ce este
+![Screenshot](screenshot.png)
 
-PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență artificială, organizată pe categorii (scriere, marketing, video și audio, design, programare etc.). Conform paginii „About” din aplicație, conține peste 500 de prompturi în 62 de categorii. Totul este un singur fișier `index.html`, fără cont și fără plată; promptul se copiază cu un clic și se lipește în instrumentul AI preferat.
+## What it is
 
-## Funcții
+PromptVault is a library of prompts for artificial intelligence tools, organised by category (writing, marketing, video and audio, design, programming, etc.). According to the app's "About" page, it contains over 500 prompts in 62 categories. Everything is a single `index.html` file, with no account and no payment; the prompt is copied with one click and pasted into your preferred AI tool.
 
-- Căutare în prompturi, cu scurtătura **Ctrl+K** (sau Cmd+K) pentru a muta cursorul în câmpul de căutare.
-- Navigare pe categorii și subcategorii, într-un panou lateral (pe ecrane înguste se deschide cu butonul ☰).
-- Sortare: „Default”, „A→Z”, „Z→A”.
-- **Completare [PLACEHOLDER]** în fereastra promptului: toate cele 502 prompturi conțin spații de tip `[TOPIC]`; panoul „Completează spațiile” generează câte un câmp pentru fiecare, previzualizarea se actualizează live, iar „Copy prompt” copiază textul completat (valorile nu sunt salvate nicăieri).
-- **Răspuns în limba interfeței** (limbi ≠ engleză): opțiune în fereastra promptului, care adaugă la final propoziția „Please write your answer in <limba>.”; promptul în sine rămâne în engleză. Textele noi sunt traduse în cele 15 limbi.
-- Buton **Copy prompt** (Copiază promptul) în fereastra de detaliu a fiecărui prompt, plus buton **Copy** pe card.
-- Temă luminoasă / întunecată (buton ☀️ Light / 🌙 Dark); la prima rulare se urmează preferința sistemului.
-- 15 limbi de interfață: engleză, română, spaniolă, franceză, germană, italiană, portugheză, olandeză, poloneză, rusă, arabă, chineză, japoneză, coreeană, turcă.
-- Panou lateral redimensionabil prin tragere sau cu tastele săgeți stânga/dreapta, Home și End când mânerul are focus.
-- **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`pv_fav`), în 15 limbi.
-- Ferestre informative: Privacy, Terms, Storage, About; buton **Reset** pentru ștergerea preferințelor salvate (și a favoritelor, după confirmare).
-- Încearcă să se înregistreze ca PWA (manifest și service worker generate din cod, doar pe conexiuni securizate / HTTPS).
+## Features
 
-## Manual de utilizare
+- Search through prompts, with the **Ctrl+K** shortcut (or Cmd+K) to move the cursor into the search field.
+- Navigation by categories and subcategories, in a side panel (on narrow screens it opens with the ☰ button).
+- Sorting: "Default", "A→Z", "Z→A".
+- **[PLACEHOLDER] filling** in the prompt window: all 502 prompts contain slots such as `[TOPIC]`; the "Fill in the blanks" panel generates a field for each one, the preview updates live, and "Copy prompt" copies the filled-in text (the values are not saved anywhere).
+- **Answer in the interface language** (languages ≠ English): an option in the prompt window that appends the sentence "Please write your answer in <language>." at the end; the prompt itself stays in English. The new texts are translated into the 15 languages.
+- **Copy prompt** button in the detail window of each prompt, plus a **Copy** button on the card.
+- Light / dark theme (☀️ Light / 🌙 Dark button); on first run it follows the system preference.
+- 15 interface languages: English, Romanian, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Arabic, Chinese, Japanese, Korean, Turkish.
+- Side panel resizable by dragging or with the left/right arrow keys, Home and End when the handle has focus.
+- **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`pv_fav`), in 15 languages.
+- Information windows: Privacy, Terms, Storage, About; a **Reset** button to clear saved preferences (and favourites, after confirmation).
+- Tries to register as a PWA (manifest and service worker generated from code, only over secure connections / HTTPS).
 
-1. Deschide pagina (sau fișierul `index.html` local).
-2. Alege limba din lista „Language” din bara laterală.
-3. Alege o categorie din bara laterală sau apasă **Ctrl+K** și scrie un cuvânt-cheie în câmpul de căutare.
-4. Opțional, schimbă ordinea cu lista „Sort”.
-5. Apasă pe un card pentru a deschide promptul complet; apasă **Copy prompt** pentru a-l copia în clipboard. Dacă browserul blochează copierea, aplicația cere să selectezi și să copiezi manual.
-6. Închide fereastra cu **Close**, cu ✕ sau cu **Esc**.
-7. Pentru a șterge setările salvate (temă, lățime panou, limbă, favorite), apasă **Reset** din subsol.
+## User guide
 
-## Confidențialitate și rețea
+1. Open the page (or the `index.html` file locally).
+2. Choose the language from the "Language" list in the sidebar.
+3. Choose a category from the sidebar or press **Ctrl+K** and type a keyword in the search field.
+4. Optionally, change the order with the "Sort" list.
+5. Click a card to open the full prompt; press **Copy prompt** to copy it to the clipboard. If the browser blocks copying, the app asks you to select and copy manually.
+6. Close the window with **Close**, with ✕ or with **Esc**.
+7. To clear saved settings (theme, panel width, language, favourites), press **Reset** in the footer.
 
-- **Stocare locală (localStorage):** patru chei, `pv_theme` (temă), `pv_sw` (lățimea panoului lateral), `pv_lang` (limbă) și `pv_fav` (lista titlurilor favorite). Nu se folosesc cookie-uri. Datele nu părăsesc dispozitivul.
-- **Rețea:** în codul aplicației nu există cereri către servere terțe, nici scripturi, fonturi sau imagini încărcate din exterior. Linkurile din aplicație (Buy Me a Coffee, alexio.tf, GitHub) se deschid doar dacă le apeși.
-- Service worker-ul generat local interceptează cererile GET către aceeași origine și le ține în cache, pentru reutilizare ulterioară; nu contactează alte gazde.
-- Aplicația nu conține analytics sau telemetrie.
+## Privacy and network
 
-## Limitări și disclaimer
+- **Local storage (localStorage):** four keys, `pv_theme` (theme), `pv_sw` (side panel width), `pv_lang` (language) and `pv_fav` (list of favourite titles). No cookies are used. Data does not leave the device.
+- **Network:** the app's code contains no requests to third-party servers, nor scripts, fonts or images loaded from outside. The links in the app (Buy Me a Coffee, alexio.tf, GitHub) open only if you click them.
+- The locally generated service worker intercepts GET requests to the same origin and caches them for later reuse; it does not contact other hosts.
+- The app contains no analytics or telemetry.
 
-Prompturile sunt șabloane, nu sfaturi. Categoriile de sănătate, sănătate mintală, medicină, drept, contabilitate/fiscalitate, investiții/trading și asigurări sunt strict informative și nu înlocuiesc un specialist; rezultatele generate de AI trebuie verificate. O notă în acest sens este afișată în subsolul barei laterale (în engleză).
+## Limitations and disclaimer
 
-## Rulare locală / offline
+The prompts are templates, not advice. The categories health, mental health, medicine, law, accounting/taxation, investing/trading and insurance are strictly informational and do not replace a specialist; AI-generated results must be verified. A note to this effect is shown in the sidebar footer (in English).
 
-Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele și limbile sunt în fișier, deci funcționează fără internet. Funcția PWA/service worker necesită servire prin HTTPS (nu funcționează la deschiderea ca fișier local); linkurile externe necesită internet.
+## Local / offline use
 
-## Licență
+Download `index.html` and open it in a browser. All prompts, texts and languages are in the file, so it works without internet. The PWA/service worker feature requires serving over HTTPS (it does not work when opened as a local file); external links require internet.
 
-MIT — vezi fișierul LICENSE.
+## Licence
 
-Textele „About” și „Terms” din interfață (toate cele 15 limbi) indică acum aceeași licență, MIT.
+MIT — see the LICENSE file.
+
+The "About" and "Terms" texts in the interface (all 15 languages) now indicate the same licence, MIT.
 
 ## Audit
 
-Audit: 2026-10-10 — afirmațiile de rețea/stocare din README corespund codului (singurul `fetch` este în service worker-ul generat local, pentru aceeași origine; CSP `connect-src 'none'`). Licența din pagină a fost unificată în toate limbile (2026-10-11; în prezent MIT); nota de subsol cu disclaimer este acum tradusă în cele 15 limbi.
+Audit: 2026-10-10 — the network/storage claims in the README match the code (the only `fetch` is in the locally generated service worker, for the same origin; CSP `connect-src 'none'`). The licence on the page was unified across all languages (2026-10-11; currently MIT); the footer disclaimer note is now translated into the 15 languages.
 
-## Autor
+## Author
 
 Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
@@ -70,21 +72,21 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
 PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
-## Istoric / Changelog
+## History / Changelog
 
 ### 1.1.0 — 2026-10-14
-- Copie de rezervă și etichetare date (fff-kit).
+- Backup and data labelling (fff-kit).
 
-### 12 octombrie 2026 (v1.0.0)
-- 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație
+### 12 October 2026 (v1.0.0)
+- 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app
 
-### 11 octombrie 2026
-- Favorite (☆/★ pe card și în fereastra promptului, element „★ Favorite” cu contor în panoul lateral, persistență în `localStorage` sub `pv_fav`, 15 limbi); politica „Storage” din aplicație listează acum și `pv_fav` (în loc de „trei preferințe”).
-- Reparat: stilul global `aside` al aplicației se aplica și pastilei de donații (`#tf-donate`), de unde dreptunghiul alb din colț în captură și butonul ✕ tăiat; pe mobil pastila putea fi împinsă în afara ecranului. Regula pastilei resetează acum proprietățile moștenite.
-- `screenshot.png` reactualizat (1280×800, interfață în română).
-- Fereastra promptului: completare interactivă a `[PLACEHOLDER]`-elor (copiere cu valorile completate) și opțiune „răspunde în limba interfeței”, în 15 limbi; testat în Chromium (previzualizare, clipboard, 360 px fără scroll orizontal).
-- CSP: `script-src` pe hash SHA-256, fără `'unsafe-inline'`.
-- Cele 23 de atribute `onclick`/`onchange` din HTML au fost înlocuite cu un ascultător delegat (`data-act`); comportamentul este neschimbat (verificat: meniu, căutare, fereastră prompt, copiere, limbă, teme, ferestre legale).
-- Contoarele din bara laterală (categorii și subcategorii) urmăresc acum căutarea activă, deci coincid cu rezultatele afișate; fără căutare rămân totalurile (502 prompturi, 62 categorii, 162 subcategorii).
-- În limbile diferite de engleză apare o notă traducată: interfața e tradusă, dar textele prompturilor rămân în engleză (traducerea celor 502 prompturi în 14 limbi nu a fost făcută).
-- `aside` pentru pastila de donații (axe: 0 încălcări).
+### 11 October 2026
+- Favourites (☆/★ on the card and in the prompt window, "★ Favourites" item with a counter in the side panel, persistence in `localStorage` under `pv_fav`, 15 languages); the app's "Storage" policy now also lists `pv_fav` (instead of "three preferences").
+- Fixed: the app's global `aside` style was also applied to the donation pill (`#tf-donate`), causing the white rectangle in the corner of the screenshot and the clipped ✕ button; on mobile the pill could be pushed off screen. The pill rule now resets the inherited properties.
+- `screenshot.png` refreshed (1280×800, interface in Romanian).
+- Prompt window: interactive filling of `[PLACEHOLDER]`s (copying with the filled-in values) and an "answer in the interface language" option, in 15 languages; tested in Chromium (preview, clipboard, 360 px with no horizontal scroll).
+- CSP: `script-src` on SHA-256 hash, without `'unsafe-inline'`.
+- The 23 `onclick`/`onchange` attributes in the HTML were replaced with a delegated listener (`data-act`); behaviour unchanged (verified: menu, search, prompt window, copy, language, themes, legal windows).
+- The sidebar counters (categories and subcategories) now follow the active search, so they match the displayed results; without a search they remain the totals (502 prompts, 62 categories, 162 subcategories).
+- In languages other than English a translated note appears: the interface is translated, but the prompt texts remain in English (translating the 502 prompts into 14 languages has not been done).
+- `aside` for the donation pill (axe: 0 violations).
