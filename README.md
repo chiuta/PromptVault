@@ -2,9 +2,11 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.1.0 · **Last updated:** 2026-10-14
+**Version:** 1.2.0 · **Last updated:** 2026-10-19
 
-A free library of AI prompts, in a single HTML file, with search, categories and an interface in 15 languages.
+Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 more
+
+A free library of AI prompts, in a single HTML file, with search, categories and an interface in 16 languages.
 
 **Live app:** https://chiuta.github.io/PromptVault/
 
@@ -20,12 +22,12 @@ PromptVault is a library of prompts for artificial intelligence tools, organised
 - Navigation by categories and subcategories, in a side panel (on narrow screens it opens with the ☰ button).
 - Sorting: "Default", "A→Z", "Z→A".
 - **[PLACEHOLDER] filling** in the prompt window: all 502 prompts contain slots such as `[TOPIC]`; the "Fill in the blanks" panel generates a field for each one, the preview updates live, and "Copy prompt" copies the filled-in text (the values are not saved anywhere).
-- **Answer in the interface language** (languages ≠ English): an option in the prompt window that appends the sentence "Please write your answer in <language>." at the end; the prompt itself stays in English. The new texts are translated into the 15 languages.
+- **Answer in the interface language** (languages ≠ English): an option in the prompt window that appends the sentence "Please write your answer in <language>." at the end; the prompt itself stays in English. The new texts are translated into the 16 languages.
 - **Copy prompt** button in the detail window of each prompt, plus a **Copy** button on the card.
 - Light / dark theme (☀️ Light / 🌙 Dark button); on first run it follows the system preference.
-- 15 interface languages: English, Romanian, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Arabic, Chinese, Japanese, Korean, Turkish.
+- 16 interface languages: English, Romanian, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Arabic, Chinese, Japanese, Korean, Turkish, Hungarian.
 - Side panel resizable by dragging or with the left/right arrow keys, Home and End when the handle has focus.
-- **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`pv_fav`), in 15 languages.
+- **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`pv_fav`), in 16 languages.
 - Information windows: Privacy, Terms, Storage, About; a **Reset** button to clear saved preferences (and favourites, after confirmation).
 - Tries to register as a PWA (manifest and service worker generated from code, only over secure connections / HTTPS).
 
@@ -58,7 +60,7 @@ Download `index.html` and open it in a browser. All prompts, texts and languages
 
 MIT — see the LICENSE file.
 
-The "About" and "Terms" texts in the interface (all 15 languages) now indicate the same licence, MIT.
+The "About" and "Terms" texts in the interface (all 16 languages) now indicate the same licence, MIT.
 
 ## Audit
 
@@ -70,7 +72,7 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
 ## English summary
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 16 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
 ## History / Changelog
 

@@ -2,9 +2,11 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.1.0 · **Dernière mise à jour :** 2026-10-14
+**Version :** 1.2.0 · **Dernière mise à jour :** 2026-10-19
 
-Une bibliothèque gratuite de prompts d'IA, dans un seul fichier HTML, avec recherche, catégories et interface en 15 langues.
+Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 autres
+
+Une bibliothèque gratuite de prompts d'IA, dans un seul fichier HTML, avec recherche, catégories et interface en 16 langues.
 
 **Application en ligne :** https://chiuta.github.io/PromptVault/
 
@@ -20,12 +22,12 @@ PromptVault est une bibliothèque de prompts pour les outils d'intelligence arti
 - Navigation par catégories et sous-catégories, dans un panneau latéral (sur les écrans étroits, il s'ouvre avec le bouton ☰).
 - Tri : « Default », « A→Z », « Z→A ».
 - **Remplissage des [PLACEHOLDER]** dans la fenêtre du prompt : les 502 prompts contiennent tous des emplacements du type `[TOPIC]` ; le panneau « Compléter les blancs » génère un champ pour chacun, l'aperçu se met à jour en direct, et « Copy prompt » copie le texte complété (les valeurs ne sont enregistrées nulle part).
-- **Réponse dans la langue de l'interface** (langues ≠ anglais) : option dans la fenêtre du prompt qui ajoute à la fin la phrase « Please write your answer in <langue>. » ; le prompt lui-même reste en anglais. Les nouveaux textes sont traduits dans les 15 langues.
+- **Réponse dans la langue de l'interface** (langues ≠ anglais) : option dans la fenêtre du prompt qui ajoute à la fin la phrase « Please write your answer in <langue>. » ; le prompt lui-même reste en anglais. Les nouveaux textes sont traduits dans les 16 langues.
 - Bouton **Copy prompt** (Copier le prompt) dans la fenêtre de détail de chaque prompt, ainsi qu'un bouton **Copy** sur la carte.
 - Thème clair / sombre (bouton ☀️ Light / 🌙 Dark) ; au premier lancement, la préférence du système est suivie.
-- 15 langues d'interface : anglais, roumain, espagnol, français, allemand, italien, portugais, néerlandais, polonais, russe, arabe, chinois, japonais, coréen, turc.
+- 16 langues d'interface : anglais, roumain, espagnol, français, allemand, italien, portugais, néerlandais, polonais, russe, arabe, chinois, japonais, coréen, turc, hongrois.
 - Panneau latéral redimensionnable par glissement ou avec les flèches gauche/droite, Début et Fin lorsque la poignée a le focus.
-- **Favoris** : le bouton ☆ de la carte ou « ☆ Ajouter aux favoris » dans la fenêtre du prompt marque un prompt ; l'élément « ★ Favoris » du panneau latéral (avec compteur) les liste. La liste est conservée uniquement dans ce navigateur (`pv_fav`), en 15 langues.
+- **Favoris** : le bouton ☆ de la carte ou « ☆ Ajouter aux favoris » dans la fenêtre du prompt marque un prompt ; l'élément « ★ Favoris » du panneau latéral (avec compteur) les liste. La liste est conservée uniquement dans ce navigateur (`pv_fav`), en 16 langues.
 - Fenêtres d'information : Privacy, Terms, Storage, About ; bouton **Reset** pour effacer les préférences enregistrées (et les favoris, après confirmation).
 - Tente de s'enregistrer comme PWA (manifeste et service worker générés par le code, uniquement sur connexions sécurisées / HTTPS).
 
@@ -58,7 +60,7 @@ Téléchargez `index.html` et ouvrez-le dans un navigateur. Tous les prompts, te
 
 MIT — voir le fichier LICENSE.
 
-Les textes « About » et « Terms » de l'interface (dans les 15 langues) indiquent désormais la même licence, MIT.
+Les textes « About » et « Terms » de l'interface (dans les 16 langues) indiquent désormais la même licence, MIT.
 
 ## Audit
 
@@ -70,7 +72,7 @@ Alexio — Alexandru-Ionuț Chiuță. Contact : alexio@trom.tf
 
 ## English summary
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 16 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
 ## Historique / Changelog
 

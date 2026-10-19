@@ -2,9 +2,11 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 2026-10-14
+**Versiune:** 1.2.0 · **Ultima actualizare:** 2026-10-19
 
-Bibliotecă gratuită de prompturi AI, într-un singur fișier HTML, cu căutare, categorii și interfață în 15 limbi.
+Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
+
+Bibliotecă gratuită de prompturi AI, într-un singur fișier HTML, cu căutare, categorii și interfață în 16 limbi.
 
 **Live:** https://chiuta.github.io/PromptVault/
 
@@ -20,12 +22,12 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 - Navigare pe categorii și subcategorii, într-un panou lateral (pe ecrane înguste se deschide cu butonul ☰).
 - Sortare: „Default”, „A→Z”, „Z→A”.
 - **Completare [PLACEHOLDER]** în fereastra promptului: toate cele 502 prompturi conțin spații de tip `[TOPIC]`; panoul „Completează spațiile” generează câte un câmp pentru fiecare, previzualizarea se actualizează live, iar „Copy prompt” copiază textul completat (valorile nu sunt salvate nicăieri).
-- **Răspuns în limba interfeței** (limbi ≠ engleză): opțiune în fereastra promptului, care adaugă la final propoziția „Please write your answer in <limba>.”; promptul în sine rămâne în engleză. Textele noi sunt traduse în cele 15 limbi.
+- **Răspuns în limba interfeței** (limbi ≠ engleză): opțiune în fereastra promptului, care adaugă la final propoziția „Please write your answer in <limba>.”; promptul în sine rămâne în engleză. Textele noi sunt traduse în cele 16 limbi.
 - Buton **Copy prompt** (Copiază promptul) în fereastra de detaliu a fiecărui prompt, plus buton **Copy** pe card.
 - Temă luminoasă / întunecată (buton ☀️ Light / 🌙 Dark); la prima rulare se urmează preferința sistemului.
-- 15 limbi de interfață: engleză, română, spaniolă, franceză, germană, italiană, portugheză, olandeză, poloneză, rusă, arabă, chineză, japoneză, coreeană, turcă.
+- 16 limbi de interfață: engleză, română, spaniolă, franceză, germană, italiană, portugheză, olandeză, poloneză, rusă, arabă, chineză, japoneză, coreeană, turcă, maghiară.
 - Panou lateral redimensionabil prin tragere sau cu tastele săgeți stânga/dreapta, Home și End când mânerul are focus.
-- **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`pv_fav`), în 15 limbi.
+- **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`pv_fav`), în 16 limbi.
 - Ferestre informative: Privacy, Terms, Storage, About; buton **Reset** pentru ștergerea preferințelor salvate (și a favoritelor, după confirmare).
 - Încearcă să se înregistreze ca PWA (manifest și service worker generate din cod, doar pe conexiuni securizate / HTTPS).
 
@@ -58,7 +60,7 @@ Descarcă `index.html` și deschide-l în browser. Toate prompturile, textele ș
 
 MIT — vezi fișierul LICENSE.
 
-Textele „About” și „Terms” din interfață (toate cele 15 limbi) indică acum aceeași licență, MIT.
+Textele „About” și „Terms” din interfață (toate cele 16 limbi) indică acum aceeași licență, MIT.
 
 ## Audit
 
@@ -70,7 +72,7 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 
 ## English summary
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 16 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
 ## Istoric / Changelog
 

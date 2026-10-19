@@ -2,9 +2,11 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.1.0 · **Utolsó frissítés:** 2026-10-14
+**Verzió:** 1.2.0 · **Utolsó frissítés:** 2026-10-19
 
-Ingyenes MI-prompt-könyvtár egyetlen HTML-fájlban, kereséssel, kategóriákkal és 15 nyelvű felülettel.
+A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + további 8
+
+Ingyenes MI-prompt-könyvtár egyetlen HTML-fájlban, kereséssel, kategóriákkal és 16 nyelvű felülettel.
 
 **Online alkalmazás:** https://chiuta.github.io/PromptVault/
 
@@ -20,12 +22,12 @@ A PromptVault a mesterséges intelligencia eszközeihez készült promptok köny
 - Navigáció kategóriák és alkategóriák szerint egy oldalpanelen (keskeny képernyőn a ☰ gombbal nyílik meg).
 - Rendezés: „Default”, „A→Z”, „Z→A”.
 - **[PLACEHOLDER] kitöltése** a prompt ablakában: mind az 502 prompt tartalmaz `[TOPIC]`-szerű helyőrzőket; a „Töltsd ki a helyeket” panel mindegyikhez létrehoz egy mezőt, az előnézet élőben frissül, a „Copy prompt” pedig a kitöltött szöveget másolja (az értékeket sehol sem tárolja).
-- **Válasz a felület nyelvén** (angoltól eltérő nyelvek): a prompt ablakában egy beállítás, amely a végére hozzáfűzi a „Please write your answer in <nyelv>.” mondatot; maga a prompt angol marad. Az új szövegek mind a 15 nyelvre le vannak fordítva.
+- **Válasz a felület nyelvén** (angoltól eltérő nyelvek): a prompt ablakában egy beállítás, amely a végére hozzáfűzi a „Please write your answer in <nyelv>.” mondatot; maga a prompt angol marad. Az új szövegek mind a 16 nyelvre le vannak fordítva.
 - **Copy prompt** (Prompt másolása) gomb minden prompt részletes ablakában, valamint **Copy** gomb a kártyán.
 - Világos / sötét téma (☀️ Light / 🌙 Dark gomb); első indításkor a rendszer beállítását követi.
-- 15 felületi nyelv: angol, román, spanyol, francia, német, olasz, portugál, holland, lengyel, orosz, arab, kínai, japán, koreai, török.
+- 16 felületi nyelv: angol, román, spanyol, francia, német, olasz, portugál, holland, lengyel, orosz, arab, kínai, japán, koreai, török, magyar.
 - Az oldalpanel húzással vagy a balra/jobbra nyílbillentyűkkel, a Home és az End billentyűvel átméretezhető, ha a fogantyún van a fókusz.
-- **Kedvencek**: a kártyán lévő ☆ gomb vagy a prompt ablakában a „☆ Mentés a kedvencek közé” megjelöl egy promptot; az oldalpanel „★ Kedvencek” eleme (számlálóval) listázza őket. A lista csak ebben a böngészőben marad meg (`pv_fav`), 15 nyelven.
+- **Kedvencek**: a kártyán lévő ☆ gomb vagy a prompt ablakában a „☆ Mentés a kedvencek közé” megjelöl egy promptot; az oldalpanel „★ Kedvencek” eleme (számlálóval) listázza őket. A lista csak ebben a böngészőben marad meg (`pv_fav`), 16 nyelven.
 - Tájékoztató ablakok: Privacy, Terms, Storage, About; **Reset** gomb a mentett beállítások törléséhez (és a kedvencekéhez, megerősítés után).
 - Megpróbál PWA-ként regisztrálni (a kódból generált manifest és service worker, csak biztonságos kapcsolaton / HTTPS-en).
 
@@ -58,7 +60,7 @@ Töltsd le az `index.html` fájlt, és nyisd meg egy böngészőben. Minden prom
 
 MIT — lásd a LICENSE fájlt.
 
-A felületen található „About” és „Terms” szövegek (mind a 15 nyelven) most már ugyanazt a licencet, az MIT-t jelölik meg.
+A felületen található „About” és „Terms” szövegek (mind a 16 nyelven) most már ugyanazt a licencet, az MIT-t jelölik meg.
 
 ## Audit
 
@@ -70,7 +72,7 @@ Alexio — Alexandru-Ionuț Chiuță. Elérhetőség: alexio@trom.tf
 
 ## English summary
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 15 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 16 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
 
 ## Előzmények / Changelog
 
