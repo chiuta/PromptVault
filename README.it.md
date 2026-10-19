@@ -70,9 +70,9 @@ Audit: 2026-10-10 — le affermazioni del README su rete e archiviazione corrisp
 
 Alexio — Alexandru-Ionuț Chiuță. Contatto: alexio@trom.tf
 
-## English summary
+## Riepilogo
 
-PromptVault is a single-file, client-side library of AI prompts (500+ across 62 categories per its About page) with search (Ctrl+K), sorting, one-click copy, light/dark theme and 16 UI languages. It stores only theme, sidebar width, language and your favorites list in localStorage and loads no third-party resources; external links open only on click. Works offline when downloaded; the optional PWA feature needs HTTPS. Licensed MIT.
+PromptVault è una libreria di prompt per l'IA lato client, in un unico file (oltre 500 in 62 categorie secondo la pagina «Informazioni»), con ricerca (Ctrl+K), ordinamento, copia con un clic, tema chiaro/scuro e 16 lingue dell'interfaccia. In localStorage conserva solo tema, larghezza della barra laterale, lingua e l'elenco dei preferiti e non carica risorse di terze parti; i link esterni si aprono solo al clic. Funziona offline una volta scaricata; la funzione PWA facoltativa richiede HTTPS. Licenza MIT.
 
 ## Cronologia / Changelog
 
