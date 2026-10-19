@@ -10,7 +10,7 @@ Ingyenes MI-prompt-könyvtár egyetlen HTML-fájlban, kereséssel, kategóriákk
 
 **Online alkalmazás:** https://chiuta.github.io/PromptVault/
 
-![Képernyőkép](screenshot.png)
+![Képernyőkép](screenshot.hu.png)
 
 ## Mi ez
 

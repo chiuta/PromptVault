@@ -10,7 +10,7 @@ Bibliotecă gratuită de prompturi AI, într-un singur fișier HTML, cu căutare
 
 **Live:** https://chiuta.github.io/PromptVault/
 
-![Captura de ecran](screenshot.png)
+![Captura de ecran](screenshot.ro.png)
 
 ## Ce este
 

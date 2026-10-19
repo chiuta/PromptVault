@@ -10,7 +10,7 @@ Une bibliothèque gratuite de prompts d'IA, dans un seul fichier HTML, avec rech
 
 **Application en ligne :** https://chiuta.github.io/PromptVault/
 
-![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.fr.png)
 
 ## De quoi s'agit-il
 

@@ -10,7 +10,7 @@ Una libreria gratuita di prompt per l'IA, in un unico file HTML, con ricerca, ca
 
 **App online:** https://chiuta.github.io/PromptVault/
 
-![Schermata](screenshot.png)
+![Schermata](screenshot.it.png)
 
 ## Cos'è
 

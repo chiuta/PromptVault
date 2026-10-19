@@ -10,7 +10,7 @@ A free library of AI prompts, in a single HTML file, with search, categories and
 
 **Live app:** https://chiuta.github.io/PromptVault/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.en.png)
 
 ## What it is
 

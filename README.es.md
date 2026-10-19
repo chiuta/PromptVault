@@ -10,7 +10,7 @@ Una biblioteca gratuita de prompts de IA, en un único archivo HTML, con búsque
 
 **Aplicación en línea:** https://chiuta.github.io/PromptVault/
 
-![Captura de pantalla](screenshot.png)
+![Captura de pantalla](screenshot.es.png)
 
 ## Qué es
 

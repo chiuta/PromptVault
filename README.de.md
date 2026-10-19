@@ -10,7 +10,7 @@ Eine kostenlose Bibliothek mit KI-Prompts in einer einzigen HTML-Datei, mit Such
 
 **Online-App:** https://chiuta.github.io/PromptVault/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.de.png)
 
 ## Was es ist
 
