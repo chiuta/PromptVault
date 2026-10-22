@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.2.3 · **Zuletzt aktualisiert:** 2026-10-22
+**Version:** 1.2.4 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 weitere
 
@@ -76,6 +76,7 @@ PromptVault ist eine clientseitige Bibliothek von KI-Prompts in einer einzigen D
 
 ## Verlauf / Changelog
 
+- 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 mit 600.000 Iterationen, Schutz vor Clickjacking
 - 1.2.3 — 2026-10-22: Echte `sw.js` + Manifest + Icons (der ungültige blob:-Service-Worker ist entfernt, die Offline-Hülle funktioniert daher nach dem ersten Besuch); die vier alert()/confirm()-Aufrufe sind durch Hinweise in der Seite und einen Dialog ersetzt; die fehlenden Texte „Kopieren fehlgeschlagen“ und „Favoriten zurücksetzen“ sind in den 8 Sprachen ergänzt (die Bestätigung zeigte einen rohen Schlüssel); Text ≥ 12 px auf dem Handy.
 
 - 1.2.2 — 2026-10-22: **Korrektur**: die Beschriftung (für Screenreader) der Sprachauswahl folgt jetzt der gewählten Sprache.

@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.3 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.2.4 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -76,6 +76,7 @@ PromptVault este o bibliotecă de prompturi AI în partea clientului, într-un s
 
 ## Istoric / Changelog
 
+- 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600 000 iterații, protecție anti-clickjacking
 - 1.2.3 — 2026-10-22: `sw.js` real + manifest + icoane (service worker-ul invalid din blob: a fost eliminat, deci shell-ul offline funcționează după prima vizită); cele patru alert()/confirm() sunt înlocuite cu notificări în pagină și un dialog; textele lipsă „copierea a eșuat” și „resetare favorite” adăugate în cele 8 limbi (confirmarea afișa o cheie brută); text ≥ 12 px pe mobil.
 
 - 1.2.2 — 2026-10-22: **remediere**: eticheta (pentru cititoare de ecran) a selectorului de limbă urmează acum limba aleasă.

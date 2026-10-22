@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.2.3 · **Última actualización:** 2026-10-22
+**Versión:** 1.2.4 · **Última actualización:** 2026-10-22
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 más
 
@@ -76,6 +76,7 @@ PromptVault es una biblioteca de prompts de IA de un único archivo, del lado de
 
 ## Historial / Changelog
 
+- 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 con 600.000 iteraciones, protección anti-clickjacking
 - 1.2.3 — 2026-10-22: `sw.js` real + manifiesto + iconos (se elimina el service worker blob: no válido, por lo que la carcasa sin conexión funciona tras la primera visita); los cuatro alert()/confirm() se sustituyen por avisos integrados y un diálogo; se añaden en los 8 idiomas los textos que faltaban «error al copiar» y «restablecer favoritos» (la confirmación mostraba una clave sin traducir); texto ≥ 12 px en móvil.
 
 - 1.2.2 — 2026-10-22: **corrección**: la etiqueta (para lectores de pantalla) del selector de idioma sigue ahora el idioma elegido.
