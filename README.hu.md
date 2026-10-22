@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.0 · **Utolsó frissítés:** 2026-10-19
+**Verzió:** 1.2.1 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + további 8
 
@@ -74,6 +74,9 @@ Alexio — Alexandru-Ionuț Chiuță. Elérhetőség: alexio@trom.tf
 A PromptVault egyfájlos, kliensoldali MI-prompt-könyvtár (a „Névjegy” oldala szerint 500+ prompt 62 kategóriában) kereséssel (Ctrl+K), rendezéssel, egykattintásos másolással, világos/sötét témával és 16 felületi nyelvvel. A localStorage-ban csak a témát, az oldalsáv szélességét, a nyelvet és a kedvencek listáját tárolja, és nem tölt be harmadik fél erőforrásokat; a külső hivatkozások csak kattintásra nyílnak meg. Letöltve offline is működik; az opcionális PWA-funkcióhoz HTTPS kell. MIT licenc.
 
 ## Előzmények / Changelog
+
+### 1.2.1 — 2026-10-22
+- Fordítási javítások: a promptok címei és címkéi le vannak fordítva ro, fr, it, es, pt, de és hu nyelvre (a keresés és a rendezés a kiválasztott nyelven működik); a hozzáférhetőségi címkék és az ugrólink követik a felület nyelvét. A promptok szövege szándékosan angol marad (AI-eszközökbe másolják).
 
 ### 1.1.0 — 2026-10-14
 - Adatok biztonsági mentése és címkézése (fff-kit).

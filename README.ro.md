@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.0 · **Ultima actualizare:** 2026-10-19
+**Versiune:** 1.2.1 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -75,6 +75,9 @@ Alexio — Alexandru-Ionuț Chiuță. Contact: alexio@trom.tf
 PromptVault este o bibliotecă de prompturi AI în partea clientului, într-un singur fișier (peste 500 în 62 de categorii, conform paginii „Despre”), cu căutare (Ctrl+K), sortare, copiere cu un clic, temă luminoasă/întunecată și 16 limbi de interfață. Stochează în localStorage doar tema, lățimea barei laterale, limba și lista de favorite și nu încarcă resurse terțe; linkurile externe se deschid doar la clic. Funcționează offline după descărcare; funcția PWA opțională necesită HTTPS. Licență MIT.
 
 ## Istoric / Changelog
+
+### 1.2.1 — 2026-10-22
+- Corecturi de traducere: titlurile și etichetele prompturilor sunt traduse în ro, fr, it, es, pt, de și hu (căutarea și sortarea funcționează în limba aleasă); etichetele de accesibilitate și linkul de salt urmează limba interfeței. Corpurile prompturilor rămân intenționat în engleză (se lipesc în unelte AI).
 
 ### 1.1.0 — 2026-10-14
 - Copie de rezervă și etichetare date (fff-kit).

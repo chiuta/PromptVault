@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.0 · **Dernière mise à jour :** 2026-10-19
+**Version :** 1.2.1 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 autres
 
@@ -75,6 +75,9 @@ Alexio — Alexandru-Ionuț Chiuță. Contact : alexio@trom.tf
 PromptVault est une bibliothèque de prompts d'IA côté client, en un seul fichier (plus de 500 répartis en 62 catégories d'après sa page À propos), avec recherche (Ctrl+K), tri, copie en un clic, thème clair/sombre et interface en 16 langues. Il ne stocke dans localStorage que le thème, la largeur de la barre latérale, la langue et votre liste de favoris, et ne charge aucune ressource tierce ; les liens externes ne s'ouvrent qu'au clic. Fonctionne hors ligne une fois téléchargé ; la fonction PWA facultative nécessite HTTPS. Sous licence MIT.
 
 ## Historique / Changelog
+
+### 1.2.1 — 2026-10-22
+- Corrections de traduction : les titres et étiquettes des prompts sont traduits en ro, fr, it, es, pt, de et hu (la recherche et le tri fonctionnent dans la langue choisie) ; les libellés d’accessibilité et le lien d’évitement suivent la langue de l’interface. Le corps des prompts reste volontairement en anglais (il est collé dans des outils d’IA).
 
 ### 1.1.0 — 2026-10-14
 - Sauvegarde et étiquetage des données (fff-kit).
