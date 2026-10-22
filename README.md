@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.6 · **Last updated:** 2026-10-23
+**Version:** 1.2.7 · **Last updated:** 2026-10-23
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 more
 
@@ -27,7 +27,7 @@ PromptVault is a library of prompts for artificial intelligence tools, organised
 - Light / dark theme (☀️ Light / 🌙 Dark button); on first run it follows the system preference.
 - 16 interface languages: English, Romanian, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Arabic, Chinese, Japanese, Korean, Turkish, Hungarian.
 - Side panel resizable by dragging or with the left/right arrow keys, Home and End when the handle has focus.
-- **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`pv_fav`), in 16 languages.
+- **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`promptvault.fav`), in 16 languages.
 - Information windows: Privacy, Terms, Storage, About; a **Reset** button to clear saved preferences (and favourites, after confirmation).
 - Tries to register as a PWA (manifest and service worker generated from code, only over secure connections / HTTPS).
 
@@ -43,7 +43,7 @@ PromptVault is a library of prompts for artificial intelligence tools, organised
 
 ## Privacy and network
 
-- **Local storage (localStorage):** four keys, `pv_theme` (theme), `pv_sw` (side panel width), `pv_lang` (language) and `pv_fav` (list of favourite titles). No cookies are used. Data does not leave the device.
+- **Local storage (localStorage):** four keys, `promptvault.theme` (theme), `promptvault.sw` (side panel width), `promptvault.lang` (language) and `promptvault.fav` (list of favourite titles). No cookies are used. Data does not leave the device.
 - **Network:** the app's code contains no requests to third-party servers, nor scripts, fonts or images loaded from outside. The links in the app (Buy Me a Coffee, alexio.tf, GitHub) open only if you click them.
 - The locally generated service worker intercepts GET requests to the same origin and caches them for later reuse; it does not contact other hosts.
 - The app contains no analytics or telemetry.
@@ -76,6 +76,10 @@ PromptVault is a single-file, client-side library of AI prompts (500+ across 62 
 
 ## History / Changelog
 
+### 1.2.7 — 2026-10-23
+
+- Local storage keys now use the `promptvault.` prefix (`FFF.store.migrate` at startup, before any read): existing data is kept automatically, and old `.fff.json` backups can still be imported.
+
 ### 1.2.5 — 2026-10-22
 
 fff-kit 1.1.4: touch targets and minimum text size; touch targets and text size corrected.
@@ -94,7 +98,7 @@ fff-kit 1.1.4: touch targets and minimum text size; touch targets and text size 
 - 1.0.0 — 2026-10-12: the version and the date of the last update are shown in the app
 
 ### 11 October 2026
-- Favourites (☆/★ on the card and in the prompt window, "★ Favourites" item with a counter in the side panel, persistence in `localStorage` under `pv_fav`, 15 languages); the app's "Storage" policy now also lists `pv_fav` (instead of "three preferences").
+- Favourites (☆/★ on the card and in the prompt window, "★ Favourites" item with a counter in the side panel, persistence in `localStorage` under `promptvault.fav`, 15 languages); the app's "Storage" policy now also lists `promptvault.fav` (instead of "three preferences").
 - Fixed: the app's global `aside` style was also applied to the donation pill (`#tf-donate`), causing the white rectangle in the corner of the screenshot and the clipped ✕ button; on mobile the pill could be pushed off screen. The pill rule now resets the inherited properties.
 - `screenshot.png` refreshed (1280×800, interface in Romanian).
 - Prompt window: interactive filling of `[PLACEHOLDER]`s (copying with the filled-in values) and an "answer in the interface language" option, in 15 languages; tested in Chromium (preview, clipboard, 360 px with no horizontal scroll).

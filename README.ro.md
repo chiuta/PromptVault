@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.6 · **Ultima actualizare:** 2026-10-23
+**Versiune:** 1.2.7 · **Ultima actualizare:** 2026-10-23
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -27,7 +27,7 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 - Temă luminoasă / întunecată (buton ☀️ Light / 🌙 Dark); la prima rulare se urmează preferința sistemului.
 - 16 limbi de interfață: engleză, română, spaniolă, franceză, germană, italiană, portugheză, olandeză, poloneză, rusă, arabă, chineză, japoneză, coreeană, turcă, maghiară.
 - Panou lateral redimensionabil prin tragere sau cu tastele săgeți stânga/dreapta, Home și End când mânerul are focus.
-- **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`pv_fav`), în 16 limbi.
+- **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`promptvault.fav`), în 16 limbi.
 - Ferestre informative: Privacy, Terms, Storage, About; buton **Reset** pentru ștergerea preferințelor salvate (și a favoritelor, după confirmare).
 - Încearcă să se înregistreze ca PWA (manifest și service worker generate din cod, doar pe conexiuni securizate / HTTPS).
 
@@ -43,7 +43,7 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 
 ## Confidențialitate și rețea
 
-- **Stocare locală (localStorage):** patru chei, `pv_theme` (temă), `pv_sw` (lățimea panoului lateral), `pv_lang` (limbă) și `pv_fav` (lista titlurilor favorite). Nu se folosesc cookie-uri. Datele nu părăsesc dispozitivul.
+- **Stocare locală (localStorage):** patru chei, `promptvault.theme` (temă), `promptvault.sw` (lățimea panoului lateral), `promptvault.lang` (limbă) și `promptvault.fav` (lista titlurilor favorite). Nu se folosesc cookie-uri. Datele nu părăsesc dispozitivul.
 - **Rețea:** în codul aplicației nu există cereri către servere terțe, nici scripturi, fonturi sau imagini încărcate din exterior. Linkurile din aplicație (Buy Me a Coffee, alexio.tf, GitHub) se deschid doar dacă le apeși.
 - Service worker-ul generat local interceptează cererile GET către aceeași origine și le ține în cache, pentru reutilizare ulterioară; nu contactează alte gazde.
 - Aplicația nu conține analytics sau telemetrie.
@@ -76,6 +76,10 @@ PromptVault este o bibliotecă de prompturi AI în partea clientului, într-un s
 
 ## Istoric / Changelog
 
+### 1.2.7 — 2026-10-23
+
+- Cheile din stocarea locală folosesc acum prefixul `promptvault.` (`FFF.store.migrate` la pornire, înainte de orice citire): datele existente se păstrează automat, iar copiile `.fff.json` vechi se pot importa în continuare.
+
 ### 1.2.5 — 2026-10-22
 
 fff-kit 1.1.4: ținte tactile și text minim; ținte tactile/text corectate.
@@ -94,7 +98,7 @@ fff-kit 1.1.4: ținte tactile și text minim; ținte tactile/text corectate.
 - 1.0.0 — 2026-10-12: versiunea și data ultimei actualizări sunt afișate în aplicație
 
 ### 11 octombrie 2026
-- Favorite (☆/★ pe card și în fereastra promptului, element „★ Favorite” cu contor în panoul lateral, persistență în `localStorage` sub `pv_fav`, 15 limbi); politica „Storage” din aplicație listează acum și `pv_fav` (în loc de „trei preferințe”).
+- Favorite (☆/★ pe card și în fereastra promptului, element „★ Favorite” cu contor în panoul lateral, persistență în `localStorage` sub `promptvault.fav`, 15 limbi); politica „Storage” din aplicație listează acum și `promptvault.fav` (în loc de „trei preferințe”).
 - Reparat: stilul global `aside` al aplicației se aplica și pastilei de donații (`#tf-donate`), de unde dreptunghiul alb din colț în captură și butonul ✕ tăiat; pe mobil pastila putea fi împinsă în afara ecranului. Regula pastilei resetează acum proprietățile moștenite.
 - `screenshot.png` reactualizat (1280×800, interfață în română).
 - Fereastra promptului: completare interactivă a `[PLACEHOLDER]`-elor (copiere cu valorile completate) și opțiune „răspunde în limba interfeței”, în 15 limbi; testat în Chromium (previzualizare, clipboard, 360 px fără scroll orizontal).

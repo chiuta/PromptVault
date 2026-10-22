@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.2.6 · **Última actualización:** 2026-10-23
+**Versión:** 1.2.7 · **Última actualización:** 2026-10-23
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 más
 
@@ -27,7 +27,7 @@ PromptVault es una biblioteca de prompts para herramientas de inteligencia artif
 - Tema claro / oscuro (botón ☀️ Light / 🌙 Dark); en la primera ejecución sigue la preferencia del sistema.
 - 16 idiomas de interfaz: inglés, rumano, español, francés, alemán, italiano, portugués, neerlandés, polaco, ruso, árabe, chino, japonés, coreano, turco, húngaro.
 - Panel lateral redimensionable arrastrando o con las teclas de flecha izquierda/derecha, Inicio y Fin cuando el asa tiene el foco.
-- **Favoritos**: el botón ☆ de la tarjeta o «☆ Guardar en favoritos» en la ventana del prompt marca un prompt; el elemento «★ Favoritos» del panel lateral (con contador) los lista. La lista se conserva solo en este navegador (`pv_fav`), en 16 idiomas.
+- **Favoritos**: el botón ☆ de la tarjeta o «☆ Guardar en favoritos» en la ventana del prompt marca un prompt; el elemento «★ Favoritos» del panel lateral (con contador) los lista. La lista se conserva solo en este navegador (`promptvault.fav`), en 16 idiomas.
 - Ventanas informativas: Privacy, Terms, Storage, About; botón **Reset** para borrar las preferencias guardadas (y los favoritos, tras confirmación).
 - Intenta registrarse como PWA (manifiesto y service worker generados desde el código, solo en conexiones seguras / HTTPS).
 
@@ -43,7 +43,7 @@ PromptVault es una biblioteca de prompts para herramientas de inteligencia artif
 
 ## Privacidad y red
 
-- **Almacenamiento local (localStorage):** cuatro claves, `pv_theme` (tema), `pv_sw` (ancho del panel lateral), `pv_lang` (idioma) y `pv_fav` (lista de títulos favoritos). No se usan cookies. Los datos no salen del dispositivo.
+- **Almacenamiento local (localStorage):** cuatro claves, `promptvault.theme` (tema), `promptvault.sw` (ancho del panel lateral), `promptvault.lang` (idioma) y `promptvault.fav` (lista de títulos favoritos). No se usan cookies. Los datos no salen del dispositivo.
 - **Red:** en el código de la aplicación no hay solicitudes a servidores de terceros, ni scripts, fuentes o imágenes cargados desde el exterior. Los enlaces de la aplicación (Buy Me a Coffee, alexio.tf, GitHub) solo se abren si los pulsas.
 - El service worker generado localmente intercepta las solicitudes GET al mismo origen y las guarda en caché para reutilizarlas después; no contacta con otros hosts.
 - La aplicación no contiene analítica ni telemetría.
@@ -76,6 +76,10 @@ PromptVault es una biblioteca de prompts de IA de un único archivo, del lado de
 
 ## Historial / Changelog
 
+### 1.2.7 — 2026-10-23
+
+- Las claves del almacenamiento local usan ahora el prefijo `promptvault.` (`FFF.store.migrate` al arrancar, antes de cualquier lectura): los datos existentes se conservan automáticamente y las copias `.fff.json` antiguas se siguen pudiendo importar.
+
 ### 1.2.5 — 2026-10-22
 
 fff-kit 1.1.4: objetivos táctiles y tamaño mínimo de texto; objetivos táctiles y texto corregidos.
@@ -94,7 +98,7 @@ fff-kit 1.1.4: objetivos táctiles y tamaño mínimo de texto; objetivos táctil
 - 1.0.0 — 2026-10-12: la versión y la fecha de la última actualización se muestran en la aplicación
 
 ### 11 de octubre de 2026
-- Favoritos (☆/★ en la tarjeta y en la ventana del prompt, elemento «★ Favoritos» con contador en el panel lateral, persistencia en `localStorage` bajo `pv_fav`, 15 idiomas); la política «Storage» de la aplicación lista ahora también `pv_fav` (en lugar de «tres preferencias»).
+- Favoritos (☆/★ en la tarjeta y en la ventana del prompt, elemento «★ Favoritos» con contador en el panel lateral, persistencia en `localStorage` bajo `promptvault.fav`, 15 idiomas); la política «Storage» de la aplicación lista ahora también `promptvault.fav` (en lugar de «tres preferencias»).
 - Corregido: el estilo global `aside` de la aplicación se aplicaba también a la píldora de donaciones (`#tf-donate`), de ahí el rectángulo blanco en la esquina de la captura y el botón ✕ cortado; en móvil la píldora podía quedar fuera de la pantalla. La regla de la píldora restablece ahora las propiedades heredadas.
 - `screenshot.png` actualizada (1280×800, interfaz en rumano).
 - Ventana del prompt: relleno interactivo de los `[PLACEHOLDER]` (copia con los valores introducidos) y opción «responder en el idioma de la interfaz», en 15 idiomas; probado en Chromium (vista previa, portapapeles, 360 px sin desplazamiento horizontal).

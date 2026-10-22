@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.6 · **Utolsó frissítés:** 2026-10-23
+**Verzió:** 1.2.7 · **Utolsó frissítés:** 2026-10-23
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + további 8
 
@@ -27,7 +27,7 @@ A PromptVault a mesterséges intelligencia eszközeihez készült promptok köny
 - Világos / sötét téma (☀️ Light / 🌙 Dark gomb); első indításkor a rendszer beállítását követi.
 - 16 felületi nyelv: angol, román, spanyol, francia, német, olasz, portugál, holland, lengyel, orosz, arab, kínai, japán, koreai, török, magyar.
 - Az oldalpanel húzással vagy a balra/jobbra nyílbillentyűkkel, a Home és az End billentyűvel átméretezhető, ha a fogantyún van a fókusz.
-- **Kedvencek**: a kártyán lévő ☆ gomb vagy a prompt ablakában a „☆ Mentés a kedvencek közé” megjelöl egy promptot; az oldalpanel „★ Kedvencek” eleme (számlálóval) listázza őket. A lista csak ebben a böngészőben marad meg (`pv_fav`), 16 nyelven.
+- **Kedvencek**: a kártyán lévő ☆ gomb vagy a prompt ablakában a „☆ Mentés a kedvencek közé” megjelöl egy promptot; az oldalpanel „★ Kedvencek” eleme (számlálóval) listázza őket. A lista csak ebben a böngészőben marad meg (`promptvault.fav`), 16 nyelven.
 - Tájékoztató ablakok: Privacy, Terms, Storage, About; **Reset** gomb a mentett beállítások törléséhez (és a kedvencekéhez, megerősítés után).
 - Megpróbál PWA-ként regisztrálni (a kódból generált manifest és service worker, csak biztonságos kapcsolaton / HTTPS-en).
 
@@ -43,7 +43,7 @@ A PromptVault a mesterséges intelligencia eszközeihez készült promptok köny
 
 ## Adatvédelem és hálózat
 
-- **Helyi tárolás (localStorage):** négy kulcs: `pv_theme` (téma), `pv_sw` (az oldalpanel szélessége), `pv_lang` (nyelv) és `pv_fav` (a kedvenc címek listája). Sütiket nem használ. Az adatok nem hagyják el az eszközt.
+- **Helyi tárolás (localStorage):** négy kulcs: `promptvault.theme` (téma), `promptvault.sw` (az oldalpanel szélessége), `promptvault.lang` (nyelv) és `promptvault.fav` (a kedvenc címek listája). Sütiket nem használ. Az adatok nem hagyják el az eszközt.
 - **Hálózat:** az alkalmazás kódjában nincsenek harmadik fél szervereihez intézett kérések, sem kívülről betöltött szkriptek, betűtípusok vagy képek. Az alkalmazás hivatkozásai (Buy Me a Coffee, alexio.tf, GitHub) csak akkor nyílnak meg, ha rájuk kattintasz.
 - A helyben generált service worker elfogja az azonos eredetre irányuló GET kéréseket, és gyorsítótárba teszi őket későbbi újrafelhasználásra; más gazdagépekkel nem lép kapcsolatba.
 - Az alkalmazás nem tartalmaz analitikát vagy telemetriát.
@@ -75,6 +75,10 @@ A PromptVault egyfájlos, kliensoldali MI-prompt-könyvtár (a „Névjegy” ol
 
 ## Előzmények / Changelog
 
+### 1.2.7 — 2026-10-23
+
+- A helyi tárhely kulcsai mostantól a `promptvault.` előtagot használják (`FFF.store.migrate` induláskor, bármilyen olvasás előtt): a meglévő adatok automatikusan megmaradnak, a régi `.fff.json` mentések továbbra is importálhatók.
+
 ### 1.2.5 — 2026-10-22
 
 fff-kit 1.1.4: érintési célok és minimális szövegméret; érintési célok és szöveg javítva.
@@ -93,7 +97,7 @@ fff-kit 1.1.4: érintési célok és minimális szövegméret; érintési célok
 - 1.0.0 — 2026-10-12: a verzió és az utolsó frissítés dátuma megjelenik az alkalmazásban
 
 ### 2026. október 11.
-- Kedvencek (☆/★ a kártyán és a prompt ablakában, „★ Kedvencek” elem számlálóval az oldalpanelen, tárolás a `localStorage`-ban `pv_fav` alatt, 15 nyelv); az alkalmazás „Storage” szabályzata most már a `pv_fav`-ot is felsorolja („három beállítás” helyett).
+- Kedvencek (☆/★ a kártyán és a prompt ablakában, „★ Kedvencek” elem számlálóval az oldalpanelen, tárolás a `localStorage`-ban `promptvault.fav` alatt, 15 nyelv); az alkalmazás „Storage” szabályzata most már a `promptvault.fav`-ot is felsorolja („három beállítás” helyett).
 - Javítva: az alkalmazás globális `aside` stílusa az adományozó pirulára (`#tf-donate`) is érvényesült, ebből adódott a fehér téglalap a képernyőkép sarkában és a levágott ✕ gomb; mobilon a pirula kicsúszhatott a képernyőről. A pirula szabálya most már visszaállítja az örökölt tulajdonságokat.
 - A `screenshot.png` frissítve (1280×800, román nyelvű felület).
 - Prompt ablak: a `[PLACEHOLDER]`-ek interaktív kitöltése (másolás a kitöltött értékekkel) és „válasz a felület nyelvén” beállítás, 15 nyelven; Chromiumban tesztelve (előnézet, vágólap, 360 px vízszintes görgetés nélkül).

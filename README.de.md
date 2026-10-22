@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.2.6 · **Zuletzt aktualisiert:** 2026-10-23
+**Version:** 1.2.7 · **Zuletzt aktualisiert:** 2026-10-23
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 weitere
 
@@ -27,7 +27,7 @@ PromptVault ist eine Bibliothek von Prompts für Werkzeuge der künstlichen Inte
 - Helles / dunkles Design (Schaltfläche ☀️ Light / 🌙 Dark); beim ersten Start wird die Systemeinstellung übernommen.
 - 16 Oberflächensprachen: Englisch, Rumänisch, Spanisch, Französisch, Deutsch, Italienisch, Portugiesisch, Niederländisch, Polnisch, Russisch, Arabisch, Chinesisch, Japanisch, Koreanisch, Türkisch, Ungarisch.
 - Seitenpanel durch Ziehen oder mit den Pfeiltasten links/rechts, Pos1 und Ende in der Größe veränderbar, wenn der Griff den Fokus hat.
-- **Favoriten**: Die Schaltfläche ☆ auf der Karte oder „☆ In Favoriten speichern“ im Prompt-Fenster markiert einen Prompt; der Eintrag „★ Favoriten“ im Seitenpanel (mit Zähler) listet sie auf. Die Liste wird nur in diesem Browser gespeichert (`pv_fav`), in 16 Sprachen.
+- **Favoriten**: Die Schaltfläche ☆ auf der Karte oder „☆ In Favoriten speichern“ im Prompt-Fenster markiert einen Prompt; der Eintrag „★ Favoriten“ im Seitenpanel (mit Zähler) listet sie auf. Die Liste wird nur in diesem Browser gespeichert (`promptvault.fav`), in 16 Sprachen.
 - Informationsfenster: Privacy, Terms, Storage, About; Schaltfläche **Reset** zum Löschen der gespeicherten Einstellungen (und der Favoriten, nach Bestätigung).
 - Versucht, sich als PWA zu registrieren (Manifest und Service Worker aus dem Code erzeugt, nur über sichere Verbindungen / HTTPS).
 
@@ -43,7 +43,7 @@ PromptVault ist eine Bibliothek von Prompts für Werkzeuge der künstlichen Inte
 
 ## Datenschutz und Netzwerk
 
-- **Lokaler Speicher (localStorage):** vier Schlüssel, `pv_theme` (Design), `pv_sw` (Breite des Seitenpanels), `pv_lang` (Sprache) und `pv_fav` (Liste der Favoritentitel). Es werden keine Cookies verwendet. Die Daten verlassen das Gerät nicht.
+- **Lokaler Speicher (localStorage):** vier Schlüssel, `promptvault.theme` (Design), `promptvault.sw` (Breite des Seitenpanels), `promptvault.lang` (Sprache) und `promptvault.fav` (Liste der Favoritentitel). Es werden keine Cookies verwendet. Die Daten verlassen das Gerät nicht.
 - **Netzwerk:** Im Code der App gibt es keine Anfragen an Drittserver und keine von außen geladenen Skripte, Schriften oder Bilder. Die Links in der App (Buy Me a Coffee, alexio.tf, GitHub) öffnen sich nur, wenn du sie anklickst.
 - Der lokal erzeugte Service Worker fängt GET-Anfragen an dieselbe Origin ab und legt sie zur späteren Wiederverwendung im Cache ab; er kontaktiert keine anderen Hosts.
 - Die App enthält weder Analytics noch Telemetrie.
@@ -76,6 +76,10 @@ PromptVault ist eine clientseitige Bibliothek von KI-Prompts in einer einzigen D
 
 ## Verlauf / Changelog
 
+### 1.2.7 — 2026-10-23
+
+- Die Schlüssel des lokalen Speichers verwenden jetzt das Präfix `promptvault.` (`FFF.store.migrate` beim Start, vor jedem Lesezugriff): vorhandene Daten bleiben automatisch erhalten, alte `.fff.json`-Sicherungen lassen sich weiterhin importieren.
+
 ### 1.2.5 — 2026-10-22
 
 fff-kit 1.1.4: Touch-Ziele und Mindestschriftgröße; Touch-Ziele und Text korrigiert.
@@ -94,7 +98,7 @@ fff-kit 1.1.4: Touch-Ziele und Mindestschriftgröße; Touch-Ziele und Text korri
 - 1.0.0 — 2026-10-12: Die Version und das Datum der letzten Aktualisierung werden in der App angezeigt
 
 ### 11. Oktober 2026
-- Favoriten (☆/★ auf der Karte und im Prompt-Fenster, Eintrag „★ Favoriten“ mit Zähler im Seitenpanel, Persistenz in `localStorage` unter `pv_fav`, 15 Sprachen); die „Storage“-Richtlinie der App listet jetzt auch `pv_fav` auf (statt „drei Einstellungen“).
+- Favoriten (☆/★ auf der Karte und im Prompt-Fenster, Eintrag „★ Favoriten“ mit Zähler im Seitenpanel, Persistenz in `localStorage` unter `promptvault.fav`, 15 Sprachen); die „Storage“-Richtlinie der App listet jetzt auch `promptvault.fav` auf (statt „drei Einstellungen“).
 - Behoben: Der globale `aside`-Stil der App wurde auch auf die Spenden-Pille (`#tf-donate`) angewendet, daher das weiße Rechteck in der Ecke des Screenshots und die abgeschnittene ✕-Schaltfläche; auf Mobilgeräten konnte die Pille aus dem Bildschirm geschoben werden. Die Regel der Pille setzt jetzt die geerbten Eigenschaften zurück.
 - `screenshot.png` aktualisiert (1280×800, Oberfläche auf Rumänisch).
 - Prompt-Fenster: interaktives Ausfüllen der `[PLACEHOLDER]` (Kopieren mit den ausgefüllten Werten) und Option „in der Sprache der Oberfläche antworten“, in 15 Sprachen; in Chromium getestet (Vorschau, Zwischenablage, 360 px ohne horizontales Scrollen).
