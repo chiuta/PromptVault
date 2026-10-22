@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.2 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.2.3 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + altre 8
 
@@ -75,6 +75,8 @@ Alexio — Alexandru-Ionuț Chiuță. Contatto: alexio@trom.tf
 PromptVault è una libreria di prompt per l'IA lato client, in un unico file (oltre 500 in 62 categorie secondo la pagina «Informazioni»), con ricerca (Ctrl+K), ordinamento, copia con un clic, tema chiaro/scuro e 16 lingue dell'interfaccia. In localStorage conserva solo tema, larghezza della barra laterale, lingua e l'elenco dei preferiti e non carica risorse di terze parti; i link esterni si aprono solo al clic. Funziona offline una volta scaricata; la funzione PWA facoltativa richiede HTTPS. Licenza MIT.
 
 ## Cronologia / Changelog
+
+- 1.2.3 — 2026-10-22: `sw.js` reale + manifest + icone (rimosso il service worker blob: non valido, quindi la shell offline funziona dopo la prima visita); i quattro alert()/confirm() sono sostituiti da avvisi integrati e da una finestra; aggiunti nelle 8 lingue i testi mancanti «copia non riuscita» e «ripristina preferiti» (la conferma mostrava una chiave grezza); testo ≥ 12 px su mobile.
 
 - 1.2.2 — 2026-10-22: **correzione**: l’etichetta (per screen reader) del selettore di lingua segue ora la lingua scelta.
 ### 1.2.1 — 2026-10-22
