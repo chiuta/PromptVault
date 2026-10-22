@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.1 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.2.2 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -76,6 +76,7 @@ PromptVault este o bibliotecă de prompturi AI în partea clientului, într-un s
 
 ## Istoric / Changelog
 
+- 1.2.2 — 2026-10-22: **remediere**: eticheta (pentru cititoare de ecran) a selectorului de limbă urmează acum limba aleasă.
 ### 1.2.1 — 2026-10-22
 - Corecturi de traducere: titlurile și etichetele prompturilor sunt traduse în ro, fr, it, es, pt, de și hu (căutarea și sortarea funcționează în limba aleasă); etichetele de accesibilitate și linkul de salt urmează limba interfeței. Corpurile prompturilor rămân intenționat în engleză (se lipesc în unelte AI).
 

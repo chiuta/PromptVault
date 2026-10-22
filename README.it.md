@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.1 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.2.2 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + altre 8
 
@@ -76,6 +76,7 @@ PromptVault è una libreria di prompt per l'IA lato client, in un unico file (ol
 
 ## Cronologia / Changelog
 
+- 1.2.2 — 2026-10-22: **correzione**: l’etichetta (per screen reader) del selettore di lingua segue ora la lingua scelta.
 ### 1.2.1 — 2026-10-22
 - Correzioni di traduzione: titoli e tag dei prompt sono tradotti in ro, fr, it, es, pt, de e hu (ricerca e ordinamento funzionano nella lingua scelta); etichette di accessibilità e link di salto seguono la lingua dell’interfaccia. Il testo dei prompt resta volutamente in inglese (si incolla negli strumenti di IA).
 

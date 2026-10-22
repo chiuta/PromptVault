@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.1 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.2.2 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + további 8
 
@@ -75,6 +75,7 @@ A PromptVault egyfájlos, kliensoldali MI-prompt-könyvtár (a „Névjegy” ol
 
 ## Előzmények / Changelog
 
+- 1.2.2 — 2026-10-22: **javítás**: a nyelvválasztó (képernyőolvasóknak szánt) felirata mostantól a kiválasztott nyelvet követi.
 ### 1.2.1 — 2026-10-22
 - Fordítási javítások: a promptok címei és címkéi le vannak fordítva ro, fr, it, es, pt, de és hu nyelvre (a keresés és a rendezés a kiválasztott nyelven működik); a hozzáférhetőségi címkék és az ugrólink követik a felület nyelvét. A promptok szövege szándékosan angol marad (AI-eszközökbe másolják).
 
