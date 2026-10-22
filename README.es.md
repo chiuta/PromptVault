@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · **Español** · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versión:** 1.2.4 · **Última actualización:** 2026-10-22
+**Versión:** 1.2.5 · **Última actualización:** 2026-10-22
 
 Idiomas de la interfaz: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 más
 
@@ -75,6 +75,10 @@ Alexio — Alexandru-Ionuț Chiuță. Contacto: alexio@trom.tf
 PromptVault es una biblioteca de prompts de IA de un único archivo, del lado del cliente (más de 500 en 62 categorías según su página Acerca de), con búsqueda (Ctrl+K), ordenación, copia con un clic, tema claro/oscuro e interfaz en 16 idiomas. Solo guarda en localStorage el tema, el ancho de la barra lateral, el idioma y tu lista de favoritos, y no carga recursos de terceros; los enlaces externos se abren solo al hacer clic. Funciona sin conexión una vez descargado; la función PWA opcional requiere HTTPS. Licencia MIT.
 
 ## Historial / Changelog
+
+### 1.2.5 — 2026-10-22
+
+fff-kit 1.1.4: objetivos táctiles y tamaño mínimo de texto; objetivos táctiles y texto corregidos.
 
 - 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 con 600.000 iteraciones, protección anti-clickjacking
 - 1.2.3 — 2026-10-22: `sw.js` real + manifiesto + iconos (se elimina el service worker blob: no válido, por lo que la carcasa sin conexión funciona tras la primera visita); los cuatro alert()/confirm() se sustituyen por avisos integrados y un diálogo; se añaden en los 8 idiomas los textos que faltaban «error al copiar» y «restablecer favoritos» (la confirmación mostraba una clave sin traducir); texto ≥ 12 px en móvil.
