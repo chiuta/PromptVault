@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.9 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -28,6 +28,7 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 - 16 limbi de interfață: engleză, română, spaniolă, franceză, germană, italiană, portugheză, olandeză, poloneză, rusă, arabă, chineză, japoneză, coreeană, turcă, maghiară.
 - Panou lateral redimensionabil prin tragere sau cu tastele săgeți stânga/dreapta, Home și End când mânerul are focus.
 - **Favorite**: butonul ☆ de pe card sau „☆ Salvează la favorite” din fereastra promptului marchează un prompt; elementul „★ Favorite” din panoul lateral (cu contor) îl listează. Lista se păstrează doar în acest browser (`promptvault.fav`), în 16 limbi.
+- **Șabloanele mele (2.0)**: șabloane cu variabile `{{nume}}` sau `{{nume|implicit}}`, create de la zero sau din orice prompt din bibliotecă („Salvează ca șablon”). Fiecare salvare creează o versiune cu notă; istoricul permite comparare pe linii cu editorul și restaurare. **Test A/B local**: alegi două versiuni, le vezi completate cu aceleași valori, plus diferențele, și notezi care a mers mai bine în instrumentul tău AI (nimic nu e trimis). Export/import prin fișier JSON (`promptvault.tpl`; interfața nouă este tradusă în română și engleză, restul limbilor revin la engleză).
 - Ferestre informative: Privacy, Terms, Storage, About; buton **Reset** pentru ștergerea preferințelor salvate (și a favoritelor, după confirmare).
 - Încearcă să se înregistreze ca PWA (manifest și service worker generate din cod, doar pe conexiuni securizate / HTTPS).
 

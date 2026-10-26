@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.9 · **Last updated:** 2026-10-26
+**Version:** 2.0.0 · **Last updated:** 2026-10-26
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 more
 
@@ -28,6 +28,7 @@ PromptVault is a library of prompts for artificial intelligence tools, organised
 - 16 interface languages: English, Romanian, Spanish, French, German, Italian, Portuguese, Dutch, Polish, Russian, Arabic, Chinese, Japanese, Korean, Turkish, Hungarian.
 - Side panel resizable by dragging or with the left/right arrow keys, Home and End when the handle has focus.
 - **Favourites**: the ☆ button on the card or "☆ Save to favourites" in the prompt window marks a prompt; the "★ Favourites" item in the side panel (with a counter) lists them. The list is kept only in this browser (`promptvault.fav`), in 16 languages.
+- **My templates (2.0)**: templates with `{{name}}` / `{{name|default}}` variables, created from scratch or from any library prompt ("Save as template"). Every save is a version with a note; history supports line diff against the editor and restore. **Local A/B test**: pick two versions, see both filled with the same values plus the diff, and record which worked better in your AI tool (nothing is sent). JSON export/import (`promptvault.tpl`; new UI strings are in English and Romanian, other languages fall back to English).
 - Information windows: Privacy, Terms, Storage, About; a **Reset** button to clear saved preferences (and favourites, after confirmation).
 - Tries to register as a PWA (manifest and service worker generated from code, only over secure connections / HTTPS).
 
