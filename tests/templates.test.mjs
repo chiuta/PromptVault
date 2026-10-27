@@ -100,7 +100,7 @@ await page.click('#na'); await page.waitForTimeout(150);
 await page.locator('.card').first().click(); await page.waitForTimeout(150);
 await page.click('[data-act=tplFromMo]'); await page.waitForTimeout(250);
 check('„Save as template” din bibliotecă: 3 șabloane, [X] → {{X}}', (await page.textContent('#tcnt')) === '3' && !/\[[A-Z ]+\]/.test(await page.inputValue('#tp-text')), await page.inputValue('#tp-text'));
-check('modalul se închide, vedere șabloane', await page.locator('#mo.open').count() === 0 && (await page.textContent('#pt')).includes('My templates'));
+check('modalul se închide, vedere șabloane', await page.locator('#mo.open').count() === 0 && (await page.textContent('#pt')).includes('My prompts'));
 
 // ștergere șablon
 await page.click('[data-act=tplDel]'); await page.waitForTimeout(250);
@@ -109,7 +109,7 @@ check('ștergere șablon cu confirmare', (await page.textContent('#tcnt')) === '
 
 // RO
 await page.evaluate(() => setLang('ro')); await page.waitForTimeout(150);
-check('interfață RO', /Șabloanele mele/.test(await page.textContent('#nt')) && /Șablon nou/.test(await page.textContent('#gw')));
+check('interfață RO', /Prompturile mele/.test(await page.textContent('#nt')) && /Șablon nou/.test(await page.textContent('#gw')));
 await page.evaluate(() => setLang('en'));
 
 // a11y + layout
