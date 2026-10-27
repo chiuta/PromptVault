@@ -1,5 +1,17 @@
 # Jurnal de modificări
 
+## 2.2.0 — 2026-10-27
+
+### Adăugat
+- **Categorii opționale pentru „Prompturile mele”**: câmp „Categorie” (etichetă liberă, max. 40 de caractere, normalizată), listă de sugestii din categoriile existente, **filtru pe categorie** deasupra listei (apare când există cel puțin o categorie; un prompt nou creat sub un filtru primește categoria filtrului; filtrul se resetează când categoria dispare). Exportul păstrează categoria (`cat`); importul simplu acceptă `category` sau `cat`. Datele vechi (fără categorie) se încarcă fără modificări.
+- Texte în română și engleză (celelalte limbi afișează engleza, ca restul secțiunii).
+- Test nou `tests/categories.test.mjs` (18 verificări): date vechi, normalizare, sugestii, limită, filtru, export/import, ștergere, persistență, RO, 360 px, 0 cereri de rețea. `own-prompts` (20) și `templates` (37, cu axe-core) rămân verzi.
+- `sizeBytes`/`sha256` din `app.json` și `fff-info` regenerate.
+
+### Neimplementat
+- Etichete multiple per prompt (doar o categorie); sortare după categorie.
+- Criptarea cheilor: nu se aplică (PromptVault nu stochează chei API).
+
 ## 2.1.0 — 2026-10-27
 
 Recenzie 2026-10-27.

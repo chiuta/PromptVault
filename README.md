@@ -2,9 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.1.0 · **Last updated:** 2026-10-27
+**Version:** 2.2.0 · **Last updated:** 2026-10-27
 
-**Status:** stable (2.1.0). "My prompts" (add / edit / delete / import-export JSON) has existed since 2.0.0 under the name "My templates"; 2.1.0 renames it, adds a visible "＋ Add your own prompt" button and a simple import format.
+**Status:** stable (2.2.0). "My prompts" (add / edit / delete / import-export JSON) has existed since 2.0.0 under the name "My templates"; 2.1.0 renames it, adds a visible "＋ Add your own prompt" button and a simple import format; 2.2.0 adds optional categories with a filter.
 
 **Offline:** yes. All prompts and texts are inside `index.html`; the page makes no network requests (CSP `connect-src 'none'`). The service worker (HTTPS only) just caches the file.
 
@@ -57,6 +57,8 @@ The sidebar has **"My prompts & templates"** (counter) and a **"＋ Add your own
 - **Import:** "Import prompts (JSON)" accepts (1) that file (the prompts are added as copies, as before) or (2) a **simple hand-written format**: `[{"name":"Summary","text":"Summarise in 3 points: {{text}}"}]` or `{"prompts":[…]}`; the keys `title` / `prompt` are accepted as aliases, `note` is optional. In the simple format, items with the same name and text as an existing prompt are skipped (re-importing the same file does not duplicate). Limit: 200 prompts, 20,000 characters each, files up to 5 MB.
 - Everything stays in `localStorage` (`promptvault.tpl`), nothing is sent anywhere. There are **no API keys** in PromptVault, so the password encryption added to the AI apps is not needed here.
 - Tests: `node tests/own-prompts.test.mjs` (add, edit, delete, export, both import formats, invalid files, persistence, 360 px) and `node tests/templates.test.mjs`.
+
+**Categories (since 2.2.0, optional):** every prompt can have a category (a short free-text label, up to 40 characters; suggestions come from the categories you already use). When at least one category exists, a filter appears above the list of prompts. The export format keeps the category (`cat` field); the simple import format accepts `category` or `cat`. Older prompts without a category keep working. Texts exist in English and Romanian (other languages show English). Test: `node tests/categories.test.mjs`.
 
 ## Privacy and network
 
