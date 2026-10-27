@@ -2,7 +2,11 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.0.0 · **Last updated:** 2026-10-26
+**Version:** 2.1.0 · **Last updated:** 2026-10-27
+
+**Status:** stable (2.1.0). "My prompts" (add / edit / delete / import-export JSON) has existed since 2.0.0 under the name "My templates"; 2.1.0 renames it, adds a visible "＋ Add your own prompt" button and a simple import format.
+
+**Offline:** yes. All prompts and texts are inside `index.html`; the page makes no network requests (CSP `connect-src 'none'`). The service worker (HTTPS only) just caches the file.
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + 8 more
 
@@ -41,6 +45,18 @@ PromptVault is a library of prompts for artificial intelligence tools, organised
 5. Click a card to open the full prompt; press **Copy prompt** to copy it to the clipboard. If the browser blocks copying, the app asks you to select and copy manually.
 6. Close the window with **Close**, with ✕ or with **Esc**.
 7. To clear saved settings (theme, panel width, language, favourites), press **Reset** in the footer.
+
+## My own prompts (add, edit, delete, import / export)
+
+The sidebar has **"My prompts & templates"** (counter) and a **"＋ Add your own prompt"** button (the feature existed since 2.0.0 as "My templates"; the texts of this section exist in English and Romanian, other languages show English).
+
+- **Add:** the button opens an editor with a name and a text. Variables are optional: `{{name}}` or `{{name|default}}` create fields and a live preview; a prompt without variables works as a plain prompt. Any library prompt can also be copied with "Save as template".
+- **Edit:** "Save version" stores a new version with an optional note; version history with line diff, restore, delete of a version, and a local A/B comparison between two versions. The name is saved as you type.
+- **Delete:** "Delete template" (with confirmation) removes the prompt with all its versions and tests.
+- **Export:** "Export my prompts (JSON)" saves `promptvault-templates.json`: `{"app":"promptvault","kind":"templates","v":1,"items":[{"id","name","vals","versions":[{"n","ts","text","note"}],"tests":[…]}]}`.
+- **Import:** "Import prompts (JSON)" accepts (1) that file (the prompts are added as copies, as before) or (2) a **simple hand-written format**: `[{"name":"Summary","text":"Summarise in 3 points: {{text}}"}]` or `{"prompts":[…]}`; the keys `title` / `prompt` are accepted as aliases, `note` is optional. In the simple format, items with the same name and text as an existing prompt are skipped (re-importing the same file does not duplicate). Limit: 200 prompts, 20,000 characters each, files up to 5 MB.
+- Everything stays in `localStorage` (`promptvault.tpl`), nothing is sent anywhere. There are **no API keys** in PromptVault, so the password encryption added to the AI apps is not needed here.
+- Tests: `node tests/own-prompts.test.mjs` (add, edit, delete, export, both import formats, invalid files, persistence, 360 px) and `node tests/templates.test.mjs`.
 
 ## Privacy and network
 

@@ -2,8 +2,8 @@
   "schema": 1,
   "slug": "promptvault",
   "name": "PromptVault — Free AI Prompt Library",
-  "version": "2.0.0",
-  "updated": "2026-10-26",
+  "version": "2.1.0",
+  "updated": "2026-10-27",
   "description": "Free library of 500+ professional AI prompts across 62 categories. No account, no payment — copy and use instantly.",
   "egress": [],
   "permissions": [

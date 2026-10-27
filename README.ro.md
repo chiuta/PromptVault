@@ -2,7 +2,11 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+
+**Stare:** stabilă (2.1.0). „Prompturile mele” (adăugare / editare / ștergere / import-export JSON) există din 2.0.0 sub numele „Șabloanele mele”; 2.1.0 o redenumește, adaugă un buton vizibil „＋ Adaugă propriul prompt” și un format simplu de import.
+
+**Offline:** da. Toate prompturile și textele sunt în `index.html`; pagina nu face cereri de rețea (CSP `connect-src 'none'`). Service worker-ul (doar HTTPS) doar ține fișierul în cache.
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar** + încă 8
 
@@ -41,6 +45,18 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 5. Apasă pe un card pentru a deschide promptul complet; apasă **Copy prompt** pentru a-l copia în clipboard. Dacă browserul blochează copierea, aplicația cere să selectezi și să copiezi manual.
 6. Închide fereastra cu **Close**, cu ✕ sau cu **Esc**.
 7. Pentru a șterge setările salvate (temă, lățime panou, limbă, favorite), apasă **Reset** din subsol.
+
+## Prompturile mele (adăugare, editare, ștergere, import / export)
+
+În bara laterală există **„Prompturile mele și șabloane”** (cu contor) și butonul **„＋ Adaugă propriul prompt”** (funcția există din 2.0.0 ca „Șabloanele mele”; textele acestei secțiuni există în română și engleză, celelalte limbi afișează engleza).
+
+- **Adăugare:** butonul deschide un editor cu nume și text. Variabilele sunt opționale: `{{nume}}` sau `{{nume|implicit}}` creează câmpuri și previzualizare în timp real; un prompt fără variabile merge ca prompt obișnuit. Orice prompt din bibliotecă poate fi copiat cu „Salvează ca șablon”.
+- **Editare:** „Salvează versiunea” păstrează o versiune nouă, cu notă opțională; istoric de versiuni cu diferențe pe linii, restaurare, ștergerea unei versiuni și comparație A/B locală între două versiuni. Numele se salvează pe măsură ce scrii.
+- **Ștergere:** „Șterge șablonul” (cu confirmare) elimină promptul cu toate versiunile și testele lui.
+- **Export:** „Exportă prompturile mele (JSON)” salvează `promptvault-templates.json`: `{"app":"promptvault","kind":"templates","v":1,"items":[{"id","name","vals","versions":[{"n","ts","text","note"}],"tests":[…]}]}`.
+- **Import:** „Importă prompturi (JSON)” acceptă (1) acel fișier (prompturile se adaugă ca duplicate, ca înainte) sau (2) un **format simplu, scris de mână**: `[{"name":"Rezumat","text":"Rezumă în 3 puncte: {{text}}"}]` sau `{"prompts":[…]}`; cheile `title` / `prompt` sunt acceptate ca sinonime, `note` e opțional. În formatul simplu, elementele cu același nume și același text ca un prompt existent sunt sărite (reimportul aceluiași fișier nu dublează). Limite: 200 de prompturi, 20 000 de caractere fiecare, fișiere de până la 5 MB.
+- Totul rămâne în `localStorage` (`promptvault.tpl`), nimic nu pleacă nicăieri. PromptVault **nu are chei API**, deci criptarea cu parolă adăugată în aplicațiile AI nu e necesară aici.
+- Teste: `node tests/own-prompts.test.mjs` (adăugare, editare, ștergere, export, ambele formate de import, fișiere invalide, persistență, 360 px) și `node tests/templates.test.mjs`.
 
 ## Confidențialitate și rețea
 
