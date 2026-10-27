@@ -2,9 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.1.0 · **Ultima actualizare:** 2026-10-27
+**Versiune:** 2.2.0 · **Ultima actualizare:** 2026-10-27
 
-**Stare:** stabilă (2.1.0). „Prompturile mele” (adăugare / editare / ștergere / import-export JSON) există din 2.0.0 sub numele „Șabloanele mele”; 2.1.0 o redenumește, adaugă un buton vizibil „＋ Adaugă propriul prompt” și un format simplu de import.
+**Stare:** stabilă (2.2.0). „Prompturile mele” (adăugare / editare / ștergere / import-export JSON) există din 2.0.0 sub numele „Șabloanele mele”; 2.1.0 o redenumește, adaugă un buton vizibil „＋ Adaugă propriul prompt” și un format simplu de import. 2.2.0 adaugă categorii opționale cu filtru.
 
 **Offline:** da. Toate prompturile și textele sunt în `index.html`; pagina nu face cereri de rețea (CSP `connect-src 'none'`). Service worker-ul (doar HTTPS) doar ține fișierul în cache.
 
@@ -57,6 +57,8 @@ PromptVault este o bibliotecă de prompturi pentru instrumente de inteligență 
 - **Import:** „Importă prompturi (JSON)” acceptă (1) acel fișier (prompturile se adaugă ca duplicate, ca înainte) sau (2) un **format simplu, scris de mână**: `[{"name":"Rezumat","text":"Rezumă în 3 puncte: {{text}}"}]` sau `{"prompts":[…]}`; cheile `title` / `prompt` sunt acceptate ca sinonime, `note` e opțional. În formatul simplu, elementele cu același nume și același text ca un prompt existent sunt sărite (reimportul aceluiași fișier nu dublează). Limite: 200 de prompturi, 20 000 de caractere fiecare, fișiere de până la 5 MB.
 - Totul rămâne în `localStorage` (`promptvault.tpl`), nimic nu pleacă nicăieri. PromptVault **nu are chei API**, deci criptarea cu parolă adăugată în aplicațiile AI nu e necesară aici.
 - Teste: `node tests/own-prompts.test.mjs` (adăugare, editare, ștergere, export, ambele formate de import, fișiere invalide, persistență, 360 px) și `node tests/templates.test.mjs`.
+
+**Categorii (din 2.2.0, opțional):** fiecare prompt poate avea o categorie (o etichetă scurtă, liberă, până la 40 de caractere; sugestiile vin din categoriile deja folosite). Când există cel puțin o categorie, apare un filtru deasupra listei de prompturi. Formatul de export păstrează categoria (câmpul `cat`); formatul simplu de import acceptă `category` sau `cat`. Prompturile vechi, fără categorie, funcționează la fel. Textele există în română și engleză (celelalte limbi afișează engleza). Test: `node tests/categories.test.mjs`.
 
 ## Confidențialitate și rețea
 
