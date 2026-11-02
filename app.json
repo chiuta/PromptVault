@@ -15,8 +15,8 @@
     "__t",
     "promptvault.lang"
   ],
-  "sizeBytes": 1288290,
-  "sha256": "5bcd4fbc354e03b07ed4b75f82c48b8b562a6005ecf0a635a7c8409ffc306254",
+  "sizeBytes": 1428724,
+  "sha256": "e093c0d74980e211dd4a4da8df5430ad965d49a53d9652678c242f2e2558b904",
   "csp": {
     "present": true,
     "directives": {
@@ -55,7 +55,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "kit": {
@@ -65,7 +69,11 @@
       "store",
       "dialog",
       "label",
-      "bundle"
+      "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history"
     ]
   },
   "selfSerializing": false
