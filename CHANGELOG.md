@@ -1,5 +1,13 @@
 # Jurnal de modificări
 
+## 2.2.1 — 2026-11-02
+
+Actualizare a surselor la 2026-11-02.
+
+### Modificat
+- Etichetele și cuvintele-cheie „DALL-E 3” (în prompturile de imagine, în toate limbile) -> „GPT Image”: OpenAI a scos DALL-E 2 și 3 din API la 12 mai 2026; înlocuitor recomandat: gpt-image-1 / gpt-image-2 (developers.openai.com/api/docs/deprecations).
+- `tests/templates.test.mjs` pica deja înainte (eroare Playwright `addInitScript`), neschimbat.
+
 ## 2.2.0 — 2026-10-27
 
 ### Adăugat
