@@ -5,6 +5,7 @@
 Actualizare a surselor la 2026-11-02.
 
 ### Modificat
+- Secțiunea „Prompturile mele și șabloane”: cele 56 de texte lipseau în franceză, germană, spaniolă, italiană, portugheză și maghiară (apăreau în engleză); traduse acum în toate cele 8 limbi.
 - Etichetele și cuvintele-cheie „DALL-E 3” (în prompturile de imagine, în toate limbile) -> „GPT Image”: OpenAI a scos DALL-E 2 și 3 din API la 12 mai 2026; înlocuitor recomandat: gpt-image-1 / gpt-image-2 (developers.openai.com/api/docs/deprecations).
 - `tests/templates.test.mjs` pica deja înainte (eroare Playwright `addInitScript`), neschimbat.
 
