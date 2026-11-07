@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.2.1 · **Last updated:** 2026-11-02
+**Version:** 2.2.2 · **Last updated:** 2026-11-07
 
 **Status:** stable (2.2.0). "My prompts" (add / edit / delete / import-export JSON) has existed since 2.0.0 under the name "My templates"; 2.1.0 renames it, adds a visible "＋ Add your own prompt" button and a simple import format; 2.2.0 adds optional categories with a filter.
 

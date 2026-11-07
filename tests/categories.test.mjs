@@ -1,4 +1,4 @@
-// Teste v2.2.1: categorii pentru „Prompturile mele” — câmp, listă de sugestii, filtru, export/import, import simplu cu `category`, compatibilitate cu date vechi.
+// Teste v2.2.2: categorii pentru „Prompturile mele” — câmp, listă de sugestii, filtru, export/import, import simplu cu `category`, compatibilitate cu date vechi.
 import {launch, check, summary, hOverflow} from "./_lib.mjs";
 import fs from "fs"; import os from "os"; import path from "path";
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "pv-cat-"));
