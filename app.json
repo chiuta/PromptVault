@@ -9,19 +9,20 @@
   "permissions": [
     "clipboard",
     "serviceWorker",
-    "localStorage"
+    "localStorage",
+    "WebGL"
   ],
   "storageKeys": [
     "__t",
     "promptvault.lang"
   ],
-  "sizeBytes": 1482834,
-  "sha256": "64789de4d6ffbb202c34e0065774b217baaa57d3f8c272837bda1cbd8b8fe3b8",
+  "sizeBytes": 1534515,
+  "sha256": "e1d88379890c703e2b1b13712447aada0bf9c2bc9e1fa696e450ad84fc760428",
   "csp": {
     "present": true,
     "directives": {
       "default-src": "'self' data:",
-      "script-src": "'self' sha256×4",
+      "script-src": "'self' sha256×5",
       "style-src": "'self' 'unsafe-inline'",
       "img-src": "'self' data:",
       "connect-src": "'none'",
