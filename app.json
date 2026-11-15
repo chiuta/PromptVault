@@ -2,7 +2,7 @@
   "schema": 1,
   "slug": "promptvault",
   "name": "PromptVault — Free AI Prompt Library",
-  "version": "2.2.8",
+  "version": "2.3.0",
   "updated": "2026-11-15",
   "description": "Free library of 500+ professional AI prompts across 62 categories. No account, no payment — copy and use instantly.",
   "egress": [],
@@ -16,8 +16,8 @@
     "__t",
     "promptvault.lang"
   ],
-  "sizeBytes": 1539803,
-  "sha256": "21afb9d8b2a172dbb783f5a072b839706d943b6c262aada76b805d9045db904b",
+  "sizeBytes": 1577825,
+  "sha256": "ae67d48210fba0dcc69012760f0ab90a5d640e5d770007e3450efa9d5aaa49e7",
   "csp": {
     "present": true,
     "directives": {
@@ -57,6 +57,7 @@
       "dialog",
       "exit",
       "view",
+      "a11y",
       "ux",
       "label",
       "bundle",
@@ -67,13 +68,14 @@
     ]
   },
   "kit": {
-    "version": "1.5.0",
+    "version": "1.6.0",
     "modules": [
       "core",
       "store",
       "dialog",
       "exit",
       "view",
+      "a11y",
       "ux",
       "label",
       "bundle",
